@@ -206,13 +206,13 @@ a, select, input, textarea, button {
   max-width: 81.25rem;
 }
 
-/* header */
+/* header starts */
 .header {
   background-color: var(--color_darkblue);
   padding: 3rem 0;
 }
 
-/* hero */
+/* hero starts */
 .hero {
   background-image: url(../img/bg.png);
   background-position: center;
@@ -243,7 +243,7 @@ a, select, input, textarea, button {
   border-bottom: 0.1rem solid var(--color_purple);
 }
 
-/* update */
+/* update starts */
 .update {
   background: var(--color_darkblue);
 }
@@ -272,8 +272,15 @@ a, select, input, textarea, button {
   border-radius: 1.5rem;
 }
 
+/* offer starts */
 .offer {
-  margin: 10rem 0;
+  margin: 8rem 0;
+}
+
+@media (max-width: 575.98px) {
+  .offer {
+    margin: 4rem 0;
+  }
 }
 
 .offer .offer--content {
@@ -286,6 +293,48 @@ a, select, input, textarea, button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 575.98px) {
+  .offer .offer--content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .offer .offer--content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.offer .offer--content .offer--single {
+  width: 30%;
+  padding-top: 2.5rem;
+}
+
+@media (max-width: 575.98px) {
+  .offer .offer--content .offer--single {
+    width: 85%;
+    padding: 3.5rem 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .offer .offer--content .offer--single {
+    width: 45%;
+    padding: 3.5rem 1rem;
+  }
 }
 
 .offer .offer--content .offer--single .offer--img {
@@ -301,12 +350,57 @@ a, select, input, textarea, button {
   border-radius: 0.625rem;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  background: linear-gradient(45deg, #222447 21%, #ffffff00 99%, #d2c2ac33 100%);
+  background: linear-gradient(45deg, #1d0053 0%, #ffffff00 63%, #00000000 100%);
   top: -1.8rem;
-  left: 9rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .offer .offer--content .offer--single .offer--img img {
   position: relative;
+  width: 2.5rem;
+}
+
+/* project starts */
+.project .project--title {
+  margin: 15rem 0 3rem 0;
+}
+
+.project .project--title h2 {
+  position: relative;
+  right: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.project .project--title h2::before, .project .project--title h2::after {
+  position: absolute;
+  content: "";
+  width: 31rem;
+  height: 0.15rem;
+  top: 1rem;
+  background: -webkit-gradient(linear, right top, left top, color-stop(5%, #ffffff00), to(#9994F0));
+  background: linear-gradient(right, #ffffff00 5%, #9994F0 100%);
+}
+
+.project .project--title h2::before {
+  left: 0;
+  margin-right: .5rem;
+  background: -webkit-gradient(linear, left top, right top, color-stop(5%, #ffffff00), to(#9994F0));
+  background: linear-gradient(left, #ffffff00 5%, #9994F0 100%);
+}
+
+.project .project--title h2::after {
+  right: 0;
+  margin-left: .5rem;
+  border: 0;
+}
+
+.project .project--title p {
+  line-height: 3rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -170,11 +170,38 @@ a, select , input , textarea , button{
 /* header starts */
 .header{
     background-color: $color_darkblue;
-    padding: 3rem 0;
+    transition: all 0.5s ease 0s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    .header--nav{
+        #brand{
+            width: 16rem;
+        }
+        .menu{
+            justify-content: space-between;
+            width: 90%;
+            li{
+                a{
+                    color: $color_white;
+                }
+            }
+        }
+    }
+}
+
+.stick {
+    position: fixed;
+    top: 0;
+    padding: .5rem 0 !important;
+    box-shadow: 0px 3px 6px #00000029;
 }
 
 /* hero starts */
 .hero{
+    margin-top: 6rem;
     background-image: url(../img/bg.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -208,6 +235,7 @@ a, select , input , textarea , button{
             background: $color_lightblue;
             padding: .8rem 1.5rem;
             border-radius: 1.5rem;
+            text-align: center;
             span{
                 background: $color_darkblue;
                 padding: .4rem 1.2rem;
@@ -230,7 +258,6 @@ a, select , input , textarea , button{
             justify-content: center;
             flex-wrap: wrap;
         }
-        
         @media (min-width: 576px) and (max-width: 991.98px) {
             justify-content: center;
             flex-wrap: wrap;
@@ -276,6 +303,9 @@ a, select , input , textarea , button{
 
 /* project starts */
 .project{
+    .c--custom--2 {
+        max-width: 88rem;
+    }
     .project--title{
         margin: 15rem 0 3rem 0;
         h2{
@@ -286,24 +316,76 @@ a, select , input , textarea , button{
             &::before, &::after {
                 position: absolute;
                 content: "";
-                width: 31rem;
-                height: 0.15rem;
-                top: 1rem;
-                background: linear-gradient(right , #ffffff00 5%, #9994F0 100%);
+                width: 32rem;
+                height: 0.2rem;
+                top: .9rem;
+                background: linear-gradient(right , #ffffff00 0%, #9994F0 100%);
+                @media (max-width: 575.98px) {
+                    width: 9rem;
+                }
+                @media (min-width: 576px) and (max-width: 767.98px) {
+                    width: 23rem;
+                }
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    width: 23rem;
+                }
+                @media (max-width: 320px) {
+                    width: 4.5rem;
+                }
+                
+                @media (min-width: 321px) and (max-width: 376px) {
+                    width: 6.5rem;
+                }
             }
             &::before{
                 left: 0;
                 margin-right: .5rem;
-                background: linear-gradient(left , #ffffff00 5%, #9994F0 100%);
+                background: linear-gradient(left , #ffffff00 0%, #9994F0 100%);
             }
             &::after{
                 right: 0;
                 margin-left: .5rem;
                 border: 0;
             }
+            img{
+                width: .5rem;
+                height: 1rem;
+            }
         }
         p{
             line-height: 3rem;
+        }
+    }
+    .project--stages{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 5rem;
+        .stage--left{
+            width: 20%;
+            margin: 1.5rem 1rem 0 0;
+        }
+        .stage--middle{
+            width: 55%;
+            text-align: center;
+            img{
+                width:100%;
+            }
+            
+        }
+        .stage--right{
+            width: 20%;
+            margin: 9.7rem 0 0 1rem;
+            
+        }
+        .stage--bottom{
+            width: 20%;
+            
+        }
+        .stage--single{
+            h2{
+                
+            }
         }
     }
 }

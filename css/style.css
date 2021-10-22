@@ -209,11 +209,41 @@ a, select, input, textarea, button {
 /* header starts */
 .header {
   background-color: var(--color_darkblue);
-  padding: 3rem 0;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+.header .header--nav #brand {
+  width: 16rem;
+}
+
+.header .header--nav .menu {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+}
+
+.header .header--nav .menu li a {
+  color: var(--color_white);
+}
+
+.stick {
+  position: fixed;
+  top: 0;
+  padding: .5rem 0 !important;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
 }
 
 /* hero starts */
 .hero {
+  margin-top: 6rem;
   background-image: url(../img/bg.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -264,6 +294,7 @@ a, select, input, textarea, button {
   background: var(--color_lightblue);
   padding: .8rem 1.5rem;
   border-radius: 1.5rem;
+  text-align: center;
 }
 
 .update .update--text p span {
@@ -365,6 +396,10 @@ a, select, input, textarea, button {
 }
 
 /* project starts */
+.project .c--custom--2 {
+  max-width: 88rem;
+}
+
 .project .project--title {
   margin: 15rem 0 3rem 0;
 }
@@ -380,18 +415,48 @@ a, select, input, textarea, button {
 .project .project--title h2::before, .project .project--title h2::after {
   position: absolute;
   content: "";
-  width: 31rem;
-  height: 0.15rem;
-  top: 1rem;
-  background: -webkit-gradient(linear, right top, left top, color-stop(5%, #ffffff00), to(#9994F0));
-  background: linear-gradient(right, #ffffff00 5%, #9994F0 100%);
+  width: 32rem;
+  height: 0.2rem;
+  top: .9rem;
+  background: -webkit-gradient(linear, right top, left top, from(#ffffff00), to(#9994F0));
+  background: linear-gradient(right, #ffffff00 0%, #9994F0 100%);
+}
+
+@media (max-width: 575.98px) {
+  .project .project--title h2::before, .project .project--title h2::after {
+    width: 9rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .project .project--title h2::before, .project .project--title h2::after {
+    width: 23rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .project .project--title h2::before, .project .project--title h2::after {
+    width: 23rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .project .project--title h2::before, .project .project--title h2::after {
+    width: 4.5rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  .project .project--title h2::before, .project .project--title h2::after {
+    width: 6.5rem;
+  }
 }
 
 .project .project--title h2::before {
   left: 0;
   margin-right: .5rem;
-  background: -webkit-gradient(linear, left top, right top, color-stop(5%, #ffffff00), to(#9994F0));
-  background: linear-gradient(left, #ffffff00 5%, #9994F0 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff00), to(#9994F0));
+  background: linear-gradient(left, #ffffff00 0%, #9994F0 100%);
 }
 
 .project .project--title h2::after {
@@ -400,7 +465,47 @@ a, select, input, textarea, button {
   border: 0;
 }
 
+.project .project--title h2 img {
+  width: .5rem;
+  height: 1rem;
+}
+
 .project .project--title p {
   line-height: 3rem;
+}
+
+.project .project--stages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.project .project--stages .stage--left {
+  width: 20%;
+  margin: 1.5rem 1rem 0 0;
+}
+
+.project .project--stages .stage--middle {
+  width: 55%;
+  text-align: center;
+}
+
+.project .project--stages .stage--middle img {
+  width: 100%;
+}
+
+.project .project--stages .stage--right {
+  width: 20%;
+  margin: 9.7rem 0 0 1rem;
+}
+
+.project .project--stages .stage--bottom {
+  width: 20%;
 }
 /*# sourceMappingURL=style.css.map */

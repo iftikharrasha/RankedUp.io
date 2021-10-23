@@ -382,12 +382,41 @@ a, select, input, textarea, button {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   background: linear-gradient(45deg, #1d0053 0%, #ffffff00 63%, #00000000 100%);
+  -webkit-box-shadow: 0 30px 100px -20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 30px 100px -20px rgba(0, 0, 0, 0.4);
+  background-size: 200%, 200%;
   top: -1.8rem;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   text-align: center;
+  -webkit-animation: cubeAnime 10s ease-in-out infinite;
+          animation: cubeAnime 10s ease-in-out infinite;
+}
+
+@-webkit-keyframes cubeAnime {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes cubeAnime {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 .offer .offer--content .offer--single .offer--img img {
@@ -489,6 +518,44 @@ a, select, input, textarea, button {
 .project .project--stages .stage--left {
   width: 20%;
   margin: 1.5rem 1rem 0 0;
+  text-align: right;
+}
+
+@media (max-width: 575.98px) {
+  .project .project--stages .stage--left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    text-align: left;
+    margin: 1.5rem 0 0 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-order: 2;
+    -moz-order: 2;
+  }
+}
+
+.project .project--stages .stage--left img {
+  width: 1rem;
+  margin-right: 1rem;
+}
+
+.project .project--stages .stage--left .stage--single {
+  margin-top: 3rem;
+}
+
+@media (max-width: 575.98px) {
+  .project .project--stages .stage--left .stage--single {
+    margin-top: 3.5rem;
+  }
 }
 
 .project .project--stages .stage--middle {
@@ -496,16 +563,103 @@ a, select, input, textarea, button {
   text-align: center;
 }
 
+@media (max-width: 575.98px) {
+  .project .project--stages .stage--middle {
+    width: 90%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-order: 1;
+    -moz-order: 1;
+  }
+}
+
 .project .project--stages .stage--middle img {
   width: 100%;
 }
 
 .project .project--stages .stage--right {
-  width: 20%;
-  margin: 9.7rem 0 0 1rem;
+  width: 21%;
+  margin: 6.7rem 0 0 1rem;
+  text-align: left;
+}
+
+@media (max-width: 575.98px) {
+  .project .project--stages .stage--right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem 0 0 0;
+    width: 90%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -webkit-order: 3;
+    -moz-order: 3;
+  }
+}
+
+.project .project--stages .stage--right img {
+  width: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.project .project--stages .stage--right .stage--single {
+  margin-top: 3rem;
+}
+
+@media (max-width: 575.98px) {
+  .project .project--stages .stage--right .stage--single {
+    margin-top: 3.5rem;
+  }
 }
 
 .project .project--stages .stage--bottom {
   width: 20%;
+  text-align: center;
+}
+
+@media (max-width: 575.98px) {
+  .project .project--stages .stage--bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem 0 0 0;
+    width: 90%;
+    text-align: left;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    -webkit-order: 4;
+    -moz-order: 4;
+  }
+}
+
+.project .project--stages .stage--bottom img {
+  width: 1rem;
+  margin-right: 1rem;
+}
+
+.project .project--stages .stage--bottom .stage--single {
+  margin-top: 3rem;
+}
+
+@media (max-width: 575.98px) {
+  .project .project--stages .stage--bottom .stage--single {
+    margin-top: 2.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

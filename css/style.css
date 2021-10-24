@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'NexaBold';
   src: url("../fonts/Nexa-Bold.otf");
@@ -1289,6 +1290,146 @@ a, select, input, textarea, button {
   color: var(--color_black);
 }
 
+.service .service--table .service--card {
+  padding: 0 1rem;
+  border-radius: .625rem;
+}
+
+.service .service--table .service--card .card--title {
+  padding: 0 0 1rem 0;
+}
+
+.service .service--table .service--card .card--data {
+  background: var(--color_lightblue);
+  color: var(--color_white);
+  border-radius: 0.4rem;
+}
+
+.service .service--table .service--card .card--data .platform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.service .service--table .service--card .card--data .platform .platform--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--color_purple);
+  padding: 1rem;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.service .service--table .service--card .card--data .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.service .service--table .service--card .card--data .label p {
+  background: var(--color_black);
+  padding: 0 .5rem;
+  text-transform: uppercase;
+}
+
+.service .service--table .service--card .card--data .traffic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.service .service--table .service--card .card--data .traffic p .up {
+  color: var(--color_green);
+}
+
+.service .service--table .service--card .card--data .traffic p .up:before {
+  content: "⮝";
+}
+
+.service .service--table .service--card .card--data .traffic p .down {
+  color: var(--color_red);
+}
+
+.service .service--table .service--card .card--data .traffic p .down:before {
+  content: "⮟";
+}
+
+.service .service--table .service--card .card--data .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.service .service--table .service--card .card--data .price p span {
+  color: var(--color_green);
+  text-transform: uppercase;
+}
+
+.service .service--table .service--card .card--data .store {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.service .service--table .service--card .card--data .store a {
+  color: var(--color_white);
+  text-transform: uppercase;
+}
+
 /* contact starts */
 .contact {
   padding: 7rem 0;
@@ -1393,13 +1534,7 @@ a, select, input, textarea, button {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .contact .contact--title p {
-    width: 80%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 991.98px) {
   .contact .contact--title p {
     width: 80%;
   }
@@ -1434,8 +1569,51 @@ a, select, input, textarea, button {
   margin: 0 auto;
   border-radius: .5rem;
   position: relative;
-  bottom: 3rem;
+  bottom: 4rem;
   padding-top: 1.5rem;
+}
+
+@media (max-width: 575.98px) {
+  .footer .footer--counter {
+    width: 95%;
+  }
+}
+
+.footer .footer--counter .counter--single {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 575.98px) {
+  .footer .footer--counter .counter--single p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .footer .footer--counter .counter--single p {
+    font-size: 1.5rem;
+  }
+}
+
+.footer .footer--counter #counter01 {
+  border-right: 1px solid var(--color_white);
+}
+
+.footer .footer--counter #counter02 {
+  border-right: 1px solid var(--color_white);
+  border-left: 1px solid var(--color_white);
+}
+
+.footer .footer--counter #counter03 {
+  border-left: 1px solid var(--color_white);
 }
 
 .footer .footer--contents {
@@ -1451,9 +1629,25 @@ a, select, input, textarea, button {
   padding: 0 0 2.5rem 0;
 }
 
+@media (max-width: 991.98px) {
+  .footer .footer--contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .footer .footer--contents .footer--icons {
   position: absolute;
   left: 5%;
+}
+
+@media (max-width: 991.98px) {
+  .footer .footer--contents .footer--icons {
+    position: static;
+    margin-bottom: 2rem;
+  }
 }
 
 .footer .footer--contents .footer--icons img {
@@ -1462,18 +1656,6 @@ a, select, input, textarea, button {
 
 .footer .footer--contents .footer--copyright {
   text-align: center;
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .footer .footer--contents .footer--copyright {
-    width: 30%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .footer .footer--contents .footer--copyright {
-    width: 30%;
-  }
 }
 
 @media (min-width: 992px) and (max-width: 1299.98px) {

@@ -863,7 +863,76 @@ a, select , input , textarea , button{
     }
     .service--table{
         color: $color_black;
-        
+        .service--card{
+            padding: 0 1rem;
+            border-radius: .625rem;
+            .card--title{
+                padding: 0 0 1rem 0;
+            }
+            .card--data{
+                background: $color_lightblue;
+                color: $color_white;
+                border-radius: 0.4rem;
+                .platform{
+                    @include flexCenter;
+                    justify-content: flex-start;
+                    .platform--icon{
+                        @include flexCenter;
+                        background: $color_purple;
+                        padding: 1rem;
+                        border-top-left-radius: 0.4rem;
+                        border-bottom-left-radius: 0.4rem;
+                        width: 4rem;
+                        height: 4rem;
+                    }
+                }
+                .label{
+                    @include flexCenter;
+                    justify-content: flex-start;
+                    p{
+                        background: $color_black;
+                        padding: 0 .5rem;
+                        text-transform: uppercase;
+                    }
+                }
+                .traffic{
+                    @include flexCenter;
+                    justify-content: flex-start;
+                    p{
+                        .up{
+                            color: $color_green;
+                            &:before {
+                                content: "⮝";
+                            }
+                        }
+                        .down{
+                            color: $color_red;
+                            &:before {
+                                content: "⮟";
+                            }
+                        }
+                    }
+                }
+                .price{
+                    @include flexCenter;
+                    justify-content: flex-start;
+                    p{
+                        span{
+                            color: $color_green;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                .store{
+                    @include flexCenter;
+                    justify-content: flex-start;
+                    a{
+                        color: $color_white;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -937,10 +1006,7 @@ a, select , input , textarea , button{
             @media (max-width: 575.98px) {
                 width: 90%;
             }
-            @media (min-width: 576px) and (max-width: 767.98px) {
-                width: 80%;
-            }
-            @media (min-width: 768px) and (max-width: 991.98px) {
+            @media (min-width: 576px) and (max-width: 991.98px) {
                 width: 80%;
             }
         }
@@ -962,32 +1028,52 @@ a, select , input , textarea , button{
         margin: 0 auto;
         border-radius: .5rem;
         position: relative;
-        bottom: 3rem;
+        bottom: 4rem;
         padding-top: 1.5rem;
+        @media (max-width: 575.98px) {
+            width: 95%;
+        }
+        .counter--single{
+            @include flexCenter;
+            p{
+                @media (max-width: 575.98px) {
+                    font-size: 1.25rem;
+                }
+                @media (min-width: 576px) and (max-width: 991.98px) {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        #counter01{
+            border-right: 1px solid $color_white;
+        }
+        #counter02{
+            border-right: 1px solid $color_white;
+            border-left: 1px solid $color_white;
+        }
+        #counter03{
+            border-left: 1px solid $color_white;
+        }
     }
     .footer--contents{
         @include flexCenter;
         padding: 0 0 2.5rem 0;
+        @media (max-width: 991.98px) {
+            flex-direction: column;
+        }
         .footer--icons{
             position: absolute;
             left: 5%;
+            @media (max-width: 991.98px) {
+                position: static;
+                margin-bottom: 2rem;
+            }
             img{
                 margin-right: 1rem;
             }
         }
         .footer--copyright{
             text-align: center;
-            @media (max-width: 575.98px) {
-        
-            }
-            
-            @media (min-width: 576px) and (max-width: 767.98px) {
-                width: 30%;
-            }
-            
-            @media (min-width: 768px) and (max-width: 991.98px) {
-                width: 30%;
-            }
             @media (min-width: 992px) and (max-width: 1299.98px) {
                 width: 35%;
             }

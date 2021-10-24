@@ -1257,7 +1257,7 @@ a, select, input, textarea, button {
   .service .service--title h4 {
     line-height: 2rem;
     font-size: 1.5rem;
-    width: 90%;
+    width: 95%;
   }
 }
 
@@ -1299,6 +1299,18 @@ a, select, input, textarea, button {
   padding: 0 0 1rem 0;
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .service .service--table .service--card .card--title p {
+    font-size: 0.72rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .service .service--table .service--card .card--title p {
+    font-size: 0.72rem;
+  }
+}
+
 .service .service--table .service--card .card--data {
   background: var(--color_lightblue);
   color: var(--color_white);
@@ -1320,6 +1332,12 @@ a, select, input, textarea, button {
           justify-content: flex-start;
 }
 
+@media (max-width: 575.98px) {
+  .service .service--table .service--card .card--data .platform {
+    position: relative;
+  }
+}
+
 .service .service--table .service--card .card--data .platform .platform--icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1330,12 +1348,49 @@ a, select, input, textarea, button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: var(--color_purple);
+  background: #817EC3;
   padding: 1rem;
   border-top-left-radius: 0.4rem;
   border-bottom-left-radius: 0.4rem;
   width: 4rem;
   height: 4rem;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .service .service--table .service--card .card--data .platform .platform--icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .service .service--table .service--card .card--data .platform p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .service .service--table .service--card .card--data .platform p {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .service .service--table .service--card .card--data .platform p {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299.98px) {
+  .service .service--table .service--card .card--data .platform p {
+    font-size: 1.125rem;
+  }
+}
+
+.service .service--table .service--card .card--data .platform .platform--toggle {
+  position: absolute;
+  right: .5rem;
+  color: #817EC3;
 }
 
 .service .service--table .service--card .card--data .label {
@@ -1359,6 +1414,18 @@ a, select, input, textarea, button {
   text-transform: uppercase;
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .service .service--table .service--card .card--data .label p {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .service .service--table .service--card .card--data .label p {
+    font-size: .8rem;
+  }
+}
+
 .service .service--table .service--card .card--data .traffic {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1372,6 +1439,18 @@ a, select, input, textarea, button {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .service .service--table .service--card .card--data .traffic p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .service .service--table .service--card .card--data .traffic p {
+    font-size: 1rem;
+  }
 }
 
 .service .service--table .service--card .card--data .traffic p .up {
@@ -1405,9 +1484,45 @@ a, select, input, textarea, button {
           justify-content: flex-start;
 }
 
+@media (max-width: 575.98px) {
+  .service .service--table .service--card .card--data .price p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .service .service--table .service--card .card--data .price p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .service .service--table .service--card .card--data .price p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299.98px) {
+  .service .service--table .service--card .card--data .price p {
+    font-size: 1.125rem;
+  }
+}
+
 .service .service--table .service--card .card--data .price p span {
   color: var(--color_green);
   text-transform: uppercase;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .service .service--table .service--card .card--data .price p span {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .service .service--table .service--card .card--data .price p span {
+    font-size: 1rem;
+  }
 }
 
 .service .service--table .service--card .card--data .store {
@@ -1428,6 +1543,52 @@ a, select, input, textarea, button {
 .service .service--table .service--card .card--data .store a {
   color: var(--color_white);
   text-transform: uppercase;
+}
+
+@media (max-width: 575.98px) {
+  .service .service--table .service--card .card--data .store a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .service .service--table .service--card .card--data .store a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .service .service--table .service--card .card--data .store a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299.98px) {
+  .service .service--table .service--card .card--data .store a {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .service .service--table .service--card .card--data .label, .service .service--table .service--card .card--data .traffic, .service .service--table .service--card .card--data .price, .service .service--table .service--card .card--data .store {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .service .service--table .service--card .card--data .inserted .label, .service .service--table .service--card .card--data .inserted .traffic, .service .service--table .service--card .card--data .inserted .price, .service .service--table .service--card .card--data .inserted .store {
+    display: block;
+    padding: 0 0.4rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .service .service--table .service--card .card--data .inserted .headlines {
+    width: 50%;
+    background-color: white;
+    color: black;
+    padding: 0.8rem;
+  }
 }
 
 /* contact starts */

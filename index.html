@@ -270,27 +270,34 @@
                                 <div class="col-sm-3 text-center">
                                     <p class="bold--13">PLATFORM</p>
                                 </div>
-                                <div class="col-sm-2">
+                                <div class="col-sm-2 d-sm-block d-none">
                                     <p class="bold--13">LABEL</p>
                                 </div>
-                                <div class="col-sm-2">
+                                <div class="col-sm-2 d-sm-block d-none">
                                     <p class="bold--13">TRAFFIC INDEX</p>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 d-sm-block d-none">
                                     <p class="bold--13">PRICING EQUIVALENT IN DOLLARS</p>
                                 </div>
-                                <div class="col-sm-2">
+                                <div class="col-sm-2 d-sm-block d-none">
                                     <p class="bold--13">STORE</p>
                                 </div>
                             </div>
                         </div>
+
                         <div class="card--data">
                             <div class="row mb-4">
-                                <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-4">
-                                        <img src="./img/coinmarketcap-icon.png" alt="coinmarketcap-icon" class="img-fluid">
+                                <div class="col-sm-3" id="heading-one">
+                                    <div class="platform" id="accordion-one" data-toggle="collapse" data-target="#platform-one" aria-expanded="true" aria-controls="platform-one" onclick="toggleOnMobile('one');">
+                                        <div class="platform--icon mr-lg-4 mr-3">
+                                            <img src="./img/coinmarketcap-icon.png" alt="coinmarketcap-icon" class="img-fluid">
+                                        </div>
+                                        <p class="lit--22">CoinMarketCap.com</p>
+                                        <span class="platform--toggle fa-stack fa-sm d-sm-none d-block">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fas fa-plus fa-stack-1x fa-inverse text-white" id="toggleIcon-one"></i>
+                                        </span>
                                     </div>
-                                    <p class="lit--22">CoinMarketCap.com</p>
                                 </div>
                                 <div class="col-sm-2 label">
                                     <p class="bold--14">MAINTANANCE</p>
@@ -303,17 +310,26 @@
                                 </div>
                                 <div class="col-sm-2 store">
                                     <a href="#" class="bold--20">ORDER NOW</a>
+                                </div>
+                                <div id="platform-one" class="col-12 collapse" aria-labelledby="heading-one" data-parent="#accordion">
+                                    <!-- for mobile screen -->
                                 </div>
                             </div>
                         </div>
                         
                         <div class="card--data">
                             <div class="row mb-4">
-                                <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-4">
-                                        <img src="./img/dextools-icon.png" alt="dextools-icon" class="img-fluid">
+                                <div class="col-sm-3" id="heading-two">
+                                    <div class="platform" id="accordion-two" data-toggle="collapse" data-target="#platform-two" aria-expanded="false" aria-controls="platform-two" onclick="toggleOnMobile('two');">
+                                        <div class="platform--icon mr-lg-4 mr-3">
+                                            <img src="./img/dextools-icon.png" alt="dextools-icon" class="img-fluid">
+                                        </div>
+                                        <p class="lit--22">DEXTools.io</p>
+                                        <span class="platform--toggle fa-stack fa-sm d-sm-none d-block">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fas fa-plus fa-stack-1x fa-inverse text-white" id="toggleIcon-two"></i>
+                                        </span>
                                     </div>
-                                    <p class="lit--22">DEXTools.io</p>
                                 </div>
                                 <div class="col-sm-2 label">
                                     <p class="bold--14">MAINTANANCE</p>
@@ -326,6 +342,9 @@
                                 </div>
                                 <div class="col-sm-2 store">
                                     <a href="#" class="bold--20">ORDER NOW</a>
+                                </div>
+                                <div id="platform-two" class="col-12 collapse" aria-labelledby="heading-two" data-parent="#accordion">
+                                    <!-- for mobile screen -->
                                 </div>
                             </div>
                         </div>
@@ -333,7 +352,7 @@
                         <div class="card--data">
                             <div class="row mb-4">
                                 <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-4">
+                                    <div class="platform--icon mr-lg-4 mr-3">
                                         <img src="./img/reddit-icon.png" alt="reddit-icon" class="img-fluid">
                                     </div>
                                     <p class="lit--22">Reddit.com</p>
@@ -356,7 +375,7 @@
                         <div class="card--data">
                             <div class="row mb-4">
                                 <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-4">
+                                    <div class="platform--icon mr-lg-4 mr-3">
                                         <img src="./img/poocoin-icon.png" alt="poocoin-icon" class="img-fluid">
                                     </div>
                                     <p class="lit--22">PooCoin.app</p>
@@ -379,7 +398,7 @@
                         <div class="card--data">
                             <div class="row mb-4">
                                 <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-4">
+                                    <div class="platform--icon mr-lg-4 mr-3">
                                         <img src="./img/coinsniper-icon.png" alt="coinsniper-icon" class="img-fluid">
                                     </div>
                                     <p class="lit--22">CoinSniper.net</p>
@@ -402,7 +421,7 @@
                         <div class="card--data">
                             <div class="row mb-4">
                                 <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-4">
+                                    <div class="platform--icon mr-lg-4 mr-3">
                                         <img src="./img/coinhunt-icon.png" alt="coinhunt-icon" class="img-fluid">
                                     </div>
                                     <p class="lit--22">CoinHunt.cc</p>
@@ -425,7 +444,7 @@
                         <div class="card--data">
                             <div class="row mb-4">
                                 <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-4">
+                                    <div class="platform--icon mr-lg-4 mr-3">
                                         <img src="./img/coinvote-icon.png" alt="coinvote-icon" class="img-fluid">
                                     </div>
                                     <p class="lit--22">CoinVote.cc</p>
@@ -448,7 +467,7 @@
                         <div class="card--data">
                             <div class="row mb-4">
                                 <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-4">
+                                    <div class="platform--icon mr-lg-4 mr-3">
                                         <img src="./img/watcherguru-icon.png" alt="watcherguru-icon" class="img-fluid">
                                     </div>
                                     <p class="lit--22">Watcher.guru</p>
@@ -471,7 +490,7 @@
                         <div class="card--data">
                             <div class="row mb-4">
                                 <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-4">
+                                    <div class="platform--icon mr-lg-4 mr-3">
                                         <img src="./img/freshcoins-icon.png" alt="freshcoins-icon" class="img-fluid">
                                     </div>
                                     <p class="lit--22">FreshCoins.io</p>
@@ -494,7 +513,7 @@
                         <div class="card--data">
                             <div class="row mb-4">
                                 <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-4">
+                                    <div class="platform--icon mr-lg-4 mr-3">
                                         <img src="./img/coinhunters-icon.png" alt="coinhunters-icon" class="img-fluid">
                                     </div>
                                     <p class="lit--22">CoinHunters.cc</p>
@@ -579,8 +598,92 @@
         </div>
     </footer>
     
-    <script text="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
-    <script text="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
+
+    <script>
+        function toggleOnMobile(idName){
+            $("#toggleIcon-" + idName).toggleClass("fa-minus fa-plus");
+
+            const platform = document.getElementById("platform-" + idName);
+            platform.innerHTML = ' ';
+            const platformDiv = document.createElement('div');
+            platformDiv.className = 'row inserted';
+            platformDiv.innerHTML =  `
+            <div class="col">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <div class="headlines">
+                            <p class="bold--13">LABEL</p>
+                        </div>
+                        <div class="label">
+                            <p class="bold--14">MAINTANANCE</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <div class="headlines">
+                            <p class="bold--13">TRAFFIC INDEX</p>
+                        </div>
+                        <div class="traffic">
+                            <p class="bold--18"><span class="pr-2 up"></span> 6,700</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <div class="headlines">
+                            <p class="bold--13">PRICING EQUIVALENT IN DOLLARS</p>
+                        </div>
+                        <div class="price">
+                            <p class="lit--22">Starting from <span class="bold--18 pl-3">40 USD</span></p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <div class="headlines">
+                            <p class="bold--13">STORE</p>
+                        </div>
+                        <div class="col-6">
+                            <div class="store">
+                                <a href="#" class="bold--20">ORDER NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `
+            platform.appendChild(platformDiv);
+        }
+    </script>
 </body>
 </html>
+
+
+
+
+
+
+    <!-- <div class="col-6">
+        <div class="headlines">
+            <p class="bold--13">LABEL</p>
+            <p class="bold--13">TRAFFIC INDEX</p>
+            <p class="bold--13">PRICING EQUIVALENT IN DOLLARS</p>
+            <p class="bold--13">STORE</p>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="label">
+            <p class="bold--14">MAINTANANCE</p>
+        </div>
+        <div class="traffic">
+            <p class="bold--18"><span class="pr-2 up"></span> 6,700</p>
+        </div>
+        <div class="price">
+            <p class="lit--22">Starting from <span class="bold--18 pl-3">40 USD</span></p>
+        </div>
+        <div class="store">
+            <a href="#" class="bold--20">ORDER NOW</a>
+        </div>
+    </div> -->

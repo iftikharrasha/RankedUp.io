@@ -669,13 +669,19 @@
             </div>
         </div>
     </footer>
+    <span id="backToTop">
+        <img src="./img/gotop.svg" alt="gotop" class="img-fluid">
+    </span>
     
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.gotop.js"></script>
     <script src="./js/script.js"></script>
 
     <script>
+        $('#backToTop').gotop();
+
         //table design for smaller devices
         function toggleOnMobile(idName){
             $("#toggleIcon-" + idName).toggleClass("fa-minus fa-plus");

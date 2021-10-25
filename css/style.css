@@ -1825,4 +1825,28 @@ a, select, input, textarea, button {
     width: 35%;
   }
 }
+
+#backToTop {
+  right: 5.5rem !important;
+}
+
+@media (max-width: 575.98px) {
+  #backToTop {
+    right: 2.5rem !important;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #backToTop {
+    right: 2.5rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #backToTop {
+    right: 2.5rem !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */

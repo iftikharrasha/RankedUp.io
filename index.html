@@ -300,16 +300,16 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-2 label">
-                                    <p class="bold--14">MAINTANANCE</p>
+                                    <p class="bold--14" id="label-one">MAINTANANCE</p>
                                 </div>
                                 <div class="col-sm-2 traffic">
-                                    <p class="bold--18"><span class="pr-2 up"></span> 6,700</p>
+                                    <p class="bold--18" id="traffic-one"><span class="pr-2 up" id="tick-one"></span> 6,700</p>
                                 </div>
                                 <div class="col-sm-3 price">
-                                    <p class="lit--22">Starting from <span class="bold--18 pl-3">40 USD</span></p>
+                                    <p class="lit--22">Starting from <span class="bold--18 pl-3" id="price-one">40 USD</span></p>
                                 </div>
                                 <div class="col-sm-2 store">
-                                    <a href="#" class="bold--20">ORDER NOW</a>
+                                    <a href="#" class="bold--20" id="store-one">ORDER NOW</a>
                                 </div>
                                 <div id="platform-one" class="col-12 collapse" aria-labelledby="heading-one" data-parent="#accordion">
                                     <!-- for mobile screen -->
@@ -332,16 +332,16 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-2 label">
-                                    <p class="bold--14">MAINTANANCE</p>
+                                    <p class="bold--14" id="label-two">MAINTANANCE</p>
                                 </div>
                                 <div class="col-sm-2 traffic">
-                                    <p class="bold--18"><span class="pr-2 up"></span> 6,700</p>
+                                    <p class="bold--18" id="traffic-two"><span class="pr-2 up" id="tick-two"></span> 6,700</p>
                                 </div>
                                 <div class="col-sm-3 price">
-                                    <p class="lit--22">Starting from <span class="bold--18 pl-3">40 USD</span></p>
+                                    <p class="lit--22">Starting from <span class="bold--18 pl-3" id="price-two">40 USD</span></p>
                                 </div>
                                 <div class="col-sm-2 store">
-                                    <a href="#" class="bold--20">ORDER NOW</a>
+                                    <a href="#" class="bold--20" id="store-two">ORDER NOW</a>
                                 </div>
                                 <div id="platform-two" class="col-12 collapse" aria-labelledby="heading-two" data-parent="#accordion">
                                     <!-- for mobile screen -->
@@ -351,184 +351,256 @@
 
                         <div class="card--data">
                             <div class="row mb-4">
-                                <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-lg-4 mr-3">
-                                        <img src="./img/reddit-icon.png" alt="reddit-icon" class="img-fluid">
+                                <div class="col-sm-3" id="heading-three">
+                                    <div class="platform" id="accordion-three" data-toggle="collapse" data-target="#platform-three" aria-expanded="false" aria-controls="platform-three" onclick="toggleOnMobile('three');">
+                                        <div class="platform--icon mr-lg-4 mr-3">
+                                            <img src="./img/reddit-icon.png" alt="reddit-icon" class="img-fluid">
+                                        </div>
+                                        <p class="lit--22">Reddit.com</p>
+                                        <span class="platform--toggle fa-stack fa-sm d-sm-none d-block">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fas fa-plus fa-stack-1x fa-inverse text-white" id="toggleIcon-three"></i>
+                                        </span>
                                     </div>
-                                    <p class="lit--22">Reddit.com</p>
                                 </div>
                                 <div class="col-sm-2 label">
-                                    <p class="bold--14">LEADING</p>
+                                    <p class="bold--14" id="label-three">LEADING</p>
                                 </div>
                                 <div class="col-sm-2 traffic">
-                                    <p class="bold--18"><span class="pr-2 up"></span> 6,700</p>
+                                    <p class="bold--18" id="traffic-three"><span class="pr-2 up" id="tick-three"></span> 6,700</p>
                                 </div>
                                 <div class="col-sm-3 price">
-                                    <p class="lit--22">Starting from <span class="bold--18 pl-3">40 USD</span></p>
+                                    <p class="lit--22">Starting from <span class="bold--18 pl-3" id="price-three">40 USD</span></p>
                                 </div>
                                 <div class="col-sm-2 store">
-                                    <a href="#" class="bold--20">ORDER NOW</a>
+                                    <a href="#" class="bold--20" id="store-three">ORDER NOW</a>
+                                </div>
+                                <div id="platform-three" class="col-12 collapse" aria-labelledby="heading-three" data-parent="#accordion">
+                                    <!-- for mobile screen -->
                                 </div>
                             </div>
                         </div>
 
                         <div class="card--data">
                             <div class="row mb-4">
-                                <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-lg-4 mr-3">
-                                        <img src="./img/poocoin-icon.png" alt="poocoin-icon" class="img-fluid">
+                                <div class="col-sm-3" id="heading-four">
+                                    <div class="platform" id="accordion-four" data-toggle="collapse" data-target="#platform-four" aria-expanded="false" aria-controls="platform-four" onclick="toggleOnMobile('four');">
+                                        <div class="platform--icon mr-lg-4 mr-3">
+                                            <img src="./img/poocoin-icon.png" alt="poocoin-icon" class="img-fluid">
+                                        </div>
+                                        <p class="lit--22">PooCoin.app</p>
+                                        <span class="platform--toggle fa-stack fa-sm d-sm-none d-block">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fas fa-plus fa-stack-1x fa-inverse text-white" id="toggleIcon-four"></i>
+                                        </span>
                                     </div>
-                                    <p class="lit--22">PooCoin.app</p>
                                 </div>
                                 <div class="col-sm-2 label">
-                                    <p class="bold--14">LEADING</p>
+                                    <p class="bold--14" id="label-four">LEADING</p>
                                 </div>
                                 <div class="col-sm-2 traffic">
-                                    <p class="bold--18"><span class="pr-2 up"></span> 6,700</p>
+                                    <p class="bold--18" id="traffic-four"><span class="pr-2 up" id="tick-four"></span> 6,700</p>
                                 </div>
                                 <div class="col-sm-3 price">
-                                    <p class="lit--22">Starting from <span class="bold--18 pl-3">40 USD</span></p>
+                                    <p class="lit--22">Starting from <span class="bold--18 pl-3" id="price-four">40 USD</span></p>
                                 </div>
                                 <div class="col-sm-2 store">
-                                    <a href="#" class="bold--20">ORDER NOW</a>
+                                    <a href="#" class="bold--20" id="store-four">ORDER NOW</a>
+                                </div>
+                                <div id="platform-four" class="col-12 collapse" aria-labelledby="heading-four" data-parent="#accordion">
+                                    <!-- for mobile screen -->
                                 </div>
                             </div>
                         </div>
 
                         <div class="card--data">
                             <div class="row mb-4">
-                                <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-lg-4 mr-3">
-                                        <img src="./img/coinsniper-icon.png" alt="coinsniper-icon" class="img-fluid">
+                                <div class="col-sm-3" id="heading-five">
+                                    <div class="platform" id="accordion-five" data-toggle="collapse" data-target="#platform-five" aria-expanded="false" aria-controls="platform-five" onclick="toggleOnMobile('five');">
+                                        <div class="platform--icon mr-lg-4 mr-3">
+                                            <img src="./img/coinsniper-icon.png" alt="coinsniper-icon" class="img-fluid">
+                                        </div>
+                                        <p class="lit--22">CoinSniper.net</p>
+                                        <span class="platform--toggle fa-stack fa-sm d-sm-none d-block">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fas fa-plus fa-stack-1x fa-inverse text-white" id="toggleIcon-five"></i>
+                                        </span>
                                     </div>
-                                    <p class="lit--22">CoinSniper.net</p>
                                 </div>
                                 <div class="col-sm-2 label">
-                                    <p class="bold--14">LEADING</p>
+                                    <p class="bold--14" id="label-five">LEADING</p>
                                 </div>
                                 <div class="col-sm-2 traffic">
-                                    <p class="bold--18"><span class="pr-2 up"></span> 6,700</p>
+                                    <p class="bold--18" id="traffic-five"><span class="pr-2 up" id="tick-five"></span> 6,700</p>
                                 </div>
                                 <div class="col-sm-3 price">
-                                    <p class="lit--22">Starting from <span class="bold--18 pl-3">40 USD</span></p>
+                                    <p class="lit--22">Starting from <span class="bold--18 pl-3" id="price-five">40 USD</span></p>
                                 </div>
                                 <div class="col-sm-2 store">
-                                    <a href="#" class="bold--20">ORDER NOW</a>
+                                    <a href="#" class="bold--20" id="store-five">ORDER NOW</a>
+                                </div>
+                                <div id="platform-five" class="col-12 collapse" aria-labelledby="heading-five" data-parent="#accordion">
+                                    <!-- for mobile screen -->
                                 </div>
                             </div>
                         </div>
 
                         <div class="card--data">
                             <div class="row mb-4">
-                                <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-lg-4 mr-3">
-                                        <img src="./img/coinhunt-icon.png" alt="coinhunt-icon" class="img-fluid">
+                                <div class="col-sm-3" id="heading-six">
+                                    <div class="platform" id="accordion-six" data-toggle="collapse" data-target="#platform-six" aria-expanded="false" aria-controls="platform-six" onclick="toggleOnMobile('six');">
+                                        <div class="platform--icon mr-lg-4 mr-3">
+                                            <img src="./img/coinhunt-icon.png" alt="coinhunt-icon" class="img-fluid">
+                                        </div>
+                                        <p class="lit--22">CoinHunt.cc</p>
+                                        <span class="platform--toggle fa-stack fa-sm d-sm-none d-block">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fas fa-plus fa-stack-1x fa-inverse text-white" id="toggleIcon-six"></i>
+                                        </span>
                                     </div>
-                                    <p class="lit--22">CoinHunt.cc</p>
                                 </div>
                                 <div class="col-sm-2 label">
-                                    <p class="bold--14">HOT</p>
+                                    <p class="bold--14" id="label-six">HOT</p>
                                 </div>
                                 <div class="col-sm-2 traffic">
-                                    <p class="bold--18"><span class="pr-2 down"></span> 6,700</p>
+                                    <p class="bold--18" id="traffic-six"><span class="pr-2 down" id="tick-six"></span> 6,700</p>
                                 </div>
                                 <div class="col-sm-3 price">
-                                    <p class="lit--22">Starting from <span class="bold--18 pl-3">40 USD</span></p>
+                                    <p class="lit--22">Starting from <span class="bold--18 pl-3" id="price-six">40 USD</span></p>
                                 </div>
                                 <div class="col-sm-2 store">
-                                    <a href="#" class="bold--20">ORDER NOW</a>
+                                    <a href="#" class="bold--20" id="store-six">ORDER NOW</a>
+                                </div>
+                                <div id="platform-six" class="col-12 collapse" aria-labelledby="heading-six" data-parent="#accordion">
+                                    <!-- for mobile screen -->
                                 </div>
                             </div>
                         </div>
 
                         <div class="card--data">
                             <div class="row mb-4">
-                                <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-lg-4 mr-3">
-                                        <img src="./img/coinvote-icon.png" alt="coinvote-icon" class="img-fluid">
+                                <div class="col-sm-3" id="heading-seven">
+                                    <div class="platform" id="accordion-seven" data-toggle="collapse" data-target="#platform-seven" aria-expanded="false" aria-controls="platform-seven" onclick="toggleOnMobile('seven');">
+                                        <div class="platform--icon mr-lg-4 mr-3">
+                                            <img src="./img/coinvote-icon.png" alt="coinvote-icon" class="img-fluid">
+                                        </div>
+                                        <p class="lit--22">CoinVote.cc</p>
+                                        <span class="platform--toggle fa-stack fa-sm d-sm-none d-block">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fas fa-plus fa-stack-1x fa-inverse text-white" id="toggleIcon-seven"></i>
+                                        </span>
                                     </div>
-                                    <p class="lit--22">CoinVote.cc</p>
                                 </div>
                                 <div class="col-sm-2 label">
-                                    <p class="bold--14">HOT</p>
+                                    <p class="bold--14" id="label-seven">HOT</p>
                                 </div>
                                 <div class="col-sm-2 traffic">
-                                    <p class="bold--18"><span class="pr-2 up"></span> 6,700</p>
+                                    <p class="bold--18" id="traffic-seven"><span class="pr-2 up" id="tick-seven"></span> 6,700</p>
                                 </div>
                                 <div class="col-sm-3 price">
-                                    <p class="lit--22">Starting from <span class="bold--18 pl-3">40 USD</span></p>
+                                    <p class="lit--22">Starting from <span class="bold--18 pl-3" id="price-seven">40 USD</span></p>
                                 </div>
                                 <div class="col-sm-2 store">
-                                    <a href="#" class="bold--20">ORDER NOW</a>
+                                    <a href="#" class="bold--20" id="store-seven">ORDER NOW</a>
+                                </div>
+                                <div id="platform-seven" class="col-12 collapse" aria-labelledby="heading-seven" data-parent="#accordion">
+                                    <!-- for mobile screen -->
                                 </div>
                             </div>
                         </div>
 
                         <div class="card--data">
                             <div class="row mb-4">
-                                <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-lg-4 mr-3">
-                                        <img src="./img/watcherguru-icon.png" alt="watcherguru-icon" class="img-fluid">
+                                <div class="col-sm-3" id="heading-eight">
+                                    <div class="platform" id="accordion-eight" data-toggle="collapse" data-target="#platform-eight" aria-expanded="false" aria-controls="platform-eight" onclick="toggleOnMobile('eight');">
+                                        <div class="platform--icon mr-lg-4 mr-3">
+                                            <img src="./img/watcherguru-icon.png" alt="watcherguru-icon" class="img-fluid">
+                                        </div>
+                                        <p class="lit--22">Watcher.guru</p>
+                                        <span class="platform--toggle fa-stack fa-sm d-sm-none d-block">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fas fa-plus fa-stack-1x fa-inverse text-white" id="toggleIcon-eight"></i>
+                                        </span>
                                     </div>
-                                    <p class="lit--22">Watcher.guru</p>
                                 </div>
                                 <div class="col-sm-2 label">
-                                    <p class="bold--14">NEW</p>
+                                    <p class="bold--14" id="label-eight">NEW</p>
                                 </div>
                                 <div class="col-sm-2 traffic">
-                                    <p class="bold--18"><span class="pr-2 up"></span> 6,700</p>
+                                    <p class="bold--18" id="traffic-eight"><span class="pr-2 up" id="tick-eight"></span> 6,700</p>
                                 </div>
                                 <div class="col-sm-3 price">
-                                    <p class="lit--22">Starting from <span class="bold--18 pl-3">40 USD</span></p>
+                                    <p class="lit--22">Starting from <span class="bold--18 pl-3" id="price-eight">40 USD</span></p>
                                 </div>
                                 <div class="col-sm-2 store">
-                                    <a href="#" class="bold--20">ORDER NOW</a>
+                                    <a href="#" class="bold--20" id="store-eight">ORDER NOW</a>
+                                </div>
+                                <div id="platform-eight" class="col-12 collapse" aria-labelledby="heading-eight" data-parent="#accordion">
+                                    <!-- for mobile screen -->
                                 </div>
                             </div>
                         </div>
 
                         <div class="card--data">
                             <div class="row mb-4">
-                                <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-lg-4 mr-3">
-                                        <img src="./img/freshcoins-icon.png" alt="freshcoins-icon" class="img-fluid">
+                                <div class="col-sm-3" id="heading-nine">
+                                    <div class="platform" id="accordion-nine" data-toggle="collapse" data-target="#platform-nine" aria-expanded="false" aria-controls="platform-nine" onclick="toggleOnMobile('nine');">
+                                        <div class="platform--icon mr-lg-4 mr-3">
+                                            <img src="./img/freshcoins-icon.png" alt="freshcoins-icon" class="img-fluid">
+                                        </div>
+                                        <p class="lit--22">FreshCoins.io</p>
+                                        <span class="platform--toggle fa-stack fa-sm d-sm-none d-block">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fas fa-plus fa-stack-1x fa-inverse text-white" id="toggleIcon-nine"></i>
+                                        </span>
                                     </div>
-                                    <p class="lit--22">FreshCoins.io</p>
                                 </div>
                                 <div class="col-sm-2 label">
-                                    <p class="bold--14">HOT</p>
+                                    <p class="bold--14" id="label-nine">HOT</p>
                                 </div>
                                 <div class="col-sm-2 traffic">
-                                    <p class="bold--18"><span class="pr-2 up"></span> 6,700</p>
+                                    <p class="bold--18" id="traffic-nine"><span class="pr-2 up" id="tick-nine"></span> 6,700</p>
                                 </div>
                                 <div class="col-sm-3 price">
-                                    <p class="lit--22">Starting from <span class="bold--18 pl-3">40 USD</span></p>
+                                    <p class="lit--22">Starting from <span class="bold--18 pl-3" id="price-nine">40 USD</span></p>
                                 </div>
                                 <div class="col-sm-2 store">
-                                    <a href="#" class="bold--20">ORDER NOW</a>
+                                    <a href="#" class="bold--20" id="store-nine">ORDER NOW</a>
+                                </div>
+                                <div id="platform-nine" class="col-12 collapse" aria-labelledby="heading-nine" data-parent="#accordion">
+                                    <!-- for mobile screen -->
                                 </div>
                             </div>
                         </div>
 
                         <div class="card--data">
                             <div class="row mb-4">
-                                <div class="col-sm-3 platform">
-                                    <div class="platform--icon mr-lg-4 mr-3">
-                                        <img src="./img/coinhunters-icon.png" alt="coinhunters-icon" class="img-fluid">
+                                <div class="col-sm-3" id="heading-ten">
+                                    <div class="platform" id="accordion-ten" data-toggle="collapse" data-target="#platform-ten" aria-expanded="false" aria-controls="platform-ten" onclick="toggleOnMobile('ten');">
+                                        <div class="platform--icon mr-lg-4 mr-3">
+                                            <img src="./img/coinhunters-icon.png" alt="coinhunters-icon" class="img-fluid">
+                                        </div>
+                                        <p class="lit--22">CoinHunters.cc</p>
+                                        <span class="platform--toggle fa-stack fa-sm d-sm-none d-block">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fas fa-plus fa-stack-1x fa-inverse text-white" id="toggleIcon-ten"></i>
+                                        </span>
                                     </div>
-                                    <p class="lit--22">CoinHunters.cc</p>
                                 </div>
                                 <div class="col-sm-2 label">
-                                    <p class="bold--14">HOT</p>
+                                    <p class="bold--14" id="label-ten">HOT</p>
                                 </div>
                                 <div class="col-sm-2 traffic">
-                                    <p class="bold--18"><span class="pr-2 up"></span> 6,700</p>
+                                    <p class="bold--18" id="traffic-ten"><span class="pr-2 up" id="tick-ten"></span> 6,700</p>
                                 </div>
                                 <div class="col-sm-3 price">
-                                    <p class="lit--22">Starting from <span class="bold--18 pl-3">40 USD</span></p>
+                                    <p class="lit--22">Starting from <span class="bold--18 pl-3" id="price-ten">40 USD</span></p>
                                 </div>
                                 <div class="col-sm-2 store">
-                                    <a href="#" class="bold--20">ORDER NOW</a>
+                                    <a href="#" class="bold--20" id="store-ten">ORDER NOW</a>
+                                </div>
+                                <div id="platform-ten" class="col-12 collapse" aria-labelledby="heading-ten" data-parent="#accordion">
+                                    <!-- for mobile screen -->
                                 </div>
                             </div>
                         </div>
@@ -604,13 +676,20 @@
     <script src="./js/script.js"></script>
 
     <script>
+        //table design for smaller devices
         function toggleOnMobile(idName){
             $("#toggleIcon-" + idName).toggleClass("fa-minus fa-plus");
 
             const platform = document.getElementById("platform-" + idName);
             platform.innerHTML = ' ';
             const platformDiv = document.createElement('div');
+            const label = document.getElementById("label-" + idName).innerText;
+            const traffic = document.getElementById("traffic-" + idName).innerText;
+            const tick = document.getElementById("tick-" + idName).getAttribute("class");
+            const price = document.getElementById("price-" + idName).innerText;
+            const store = document.getElementById("store-" + idName).href;
             platformDiv.className = 'row inserted';
+
             platformDiv.innerHTML =  `
             <div class="col">
                 <div class="row">
@@ -619,7 +698,7 @@
                             <p class="bold--13">LABEL</p>
                         </div>
                         <div class="label">
-                            <p class="bold--14">MAINTANANCE</p>
+                            <p class="bold--14">${label}</p>
                         </div>
                     </div>
 
@@ -628,7 +707,7 @@
                             <p class="bold--13">TRAFFIC INDEX</p>
                         </div>
                         <div class="traffic">
-                            <p class="bold--18"><span class="pr-2 up"></span> 6,700</p>
+                            <p class="bold--18"><span class="${tick}""></span> ${traffic}</p>
                         </div>
                     </div>
 
@@ -637,7 +716,7 @@
                             <p class="bold--13">PRICING EQUIVALENT IN DOLLARS</p>
                         </div>
                         <div class="price">
-                            <p class="lit--22">Starting from <span class="bold--18 pl-3">40 USD</span></p>
+                            <p class="lit--22">Starting from <span class="bold--18 pl-3">${price}</span></p>
                         </div>
                     </div>
 
@@ -647,7 +726,7 @@
                         </div>
                         <div class="col-6">
                             <div class="store">
-                                <a href="#" class="bold--20">ORDER NOW</a>
+                                <a href="${store}" class="bold--20">ORDER NOW</a>
                             </div>
                         </div>
                     </div>
@@ -659,31 +738,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
-    <!-- <div class="col-6">
-        <div class="headlines">
-            <p class="bold--13">LABEL</p>
-            <p class="bold--13">TRAFFIC INDEX</p>
-            <p class="bold--13">PRICING EQUIVALENT IN DOLLARS</p>
-            <p class="bold--13">STORE</p>
-        </div>
-    </div>
-    <div class="col-6">
-        <div class="label">
-            <p class="bold--14">MAINTANANCE</p>
-        </div>
-        <div class="traffic">
-            <p class="bold--18"><span class="pr-2 up"></span> 6,700</p>
-        </div>
-        <div class="price">
-            <p class="lit--22">Starting from <span class="bold--18 pl-3">40 USD</span></p>
-        </div>
-        <div class="store">
-            <a href="#" class="bold--20">ORDER NOW</a>
-        </div>
-    </div> -->

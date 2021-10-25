@@ -1579,6 +1579,7 @@ a, select, input, textarea, button {
   .service .service--table .service--card .card--data .inserted .label, .service .service--table .service--card .card--data .inserted .traffic, .service .service--table .service--card .card--data .inserted .price, .service .service--table .service--card .card--data .inserted .store {
     display: block;
     padding: 0 0.4rem;
+    text-align: right;
   }
 }
 

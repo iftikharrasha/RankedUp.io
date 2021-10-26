@@ -174,7 +174,7 @@ a, select, input, textarea, button {
 }
 
 .bold--24 {
-  font-size: 4rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -495,6 +495,8 @@ a, select, input, textarea, button {
   top: .9rem;
   background: -webkit-gradient(linear, right top, left top, from(#ffffff00), to(#9994F0));
   background: linear-gradient(right, #ffffff00 0%, #9994F0 100%);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(#9994f0));
+  background: linear-gradient(right, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
 }
 
 @media (max-width: 575.98px) {
@@ -538,6 +540,8 @@ a, select, input, textarea, button {
   margin-right: .5rem;
   background: -webkit-gradient(linear, left top, right top, from(#ffffff00), to(#9994F0));
   background: linear-gradient(left, #ffffff00 0%, #9994F0 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#9994f0));
+  background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
 }
 
 .project .project--title h2::after {
@@ -817,6 +821,8 @@ a, select, input, textarea, button {
   top: 0.96rem;
   background: -webkit-gradient(linear, right top, left top, from(#ffffff00), to(#9994F0));
   background: linear-gradient(right, #ffffff00 0%, #9994F0 100%);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(#9994f0));
+  background: linear-gradient(right, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
 }
 
 @media (max-width: 575.98px) {
@@ -876,6 +882,8 @@ a, select, input, textarea, button {
   margin-right: .5rem;
   background: -webkit-gradient(linear, left top, right top, from(#ffffff00), to(#9994F0));
   background: linear-gradient(left, #ffffff00 0%, #9994F0 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#9994f0));
+  background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
 }
 
 .popular .popular--title h2::after {
@@ -1213,6 +1221,8 @@ a, select, input, textarea, button {
   top: .95rem;
   background: -webkit-gradient(linear, right top, left top, from(#ffffff00), to(#9994F0));
   background: linear-gradient(right, #ffffff00 0%, #9994F0 100%);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(#9994f0));
+  background: linear-gradient(right, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
 }
 
 @media (max-width: 575.98px) {
@@ -1256,6 +1266,8 @@ a, select, input, textarea, button {
   margin-right: .5rem;
   background: -webkit-gradient(linear, left top, right top, from(#ffffff00), to(#9994F0));
   background: linear-gradient(left, #ffffff00 0%, #9994F0 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#9994f0));
+  background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
 }
 
 .service .service--title h2::after {
@@ -1646,6 +1658,8 @@ a, select, input, textarea, button {
   top: .96rem;
   background: -webkit-gradient(linear, right top, left top, from(#ffffff00), to(#9994F0));
   background: linear-gradient(right, #ffffff00 0%, #9994F0 100%);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(#9994f0));
+  background: linear-gradient(right, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
 }
 
 @media (max-width: 575.98px) {
@@ -1705,6 +1719,8 @@ a, select, input, textarea, button {
   margin-right: .5rem;
   background: -webkit-gradient(linear, left top, right top, from(#ffffff00), to(#9994F0));
   background: linear-gradient(left, #ffffff00 0%, #9994F0 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#9994f0));
+  background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
 }
 
 .contact .contact--title h2::after {
@@ -1914,6 +1930,8 @@ a, select, input, textarea, button {
   top: .95rem;
   background: -webkit-gradient(linear, right top, left top, from(#ffffff00), to(#9994F0));
   background: linear-gradient(right, #ffffff00 0%, #9994F0 100%);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(#9994f0));
+  background: linear-gradient(right, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
 }
 
 @media (max-width: 575.98px) {
@@ -1957,6 +1975,8 @@ a, select, input, textarea, button {
   margin-right: .5rem;
   background: -webkit-gradient(linear, left top, right top, from(#ffffff00), to(#9994F0));
   background: linear-gradient(left, #ffffff00 0%, #9994F0 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#9994f0));
+  background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
 }
 
 .page .page--title h2::after {
@@ -2011,5 +2031,277 @@ a, select, input, textarea, button {
   .page .page--top p {
     font-size: .93rem;
   }
+}
+
+/* pricing starts */
+.pricing .c--custom--2 {
+  max-width: 88rem;
+}
+
+.pricing .pricing--title {
+  margin: 5rem 0 3rem 0;
+}
+
+.pricing .pricing--title h2 {
+  position: relative;
+  right: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.pricing .pricing--title h2::before, .pricing .pricing--title h2::after {
+  position: absolute;
+  content: "";
+  width: 31.5rem;
+  height: 0.2rem;
+  top: .9rem;
+  background: -webkit-gradient(linear, right top, left top, from(#ffffff00), to(#9994F0));
+  background: linear-gradient(right, #ffffff00 0%, #9994F0 100%);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(#9994f0));
+  background: linear-gradient(right, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
+}
+
+@media (max-width: 575.98px) {
+  .pricing .pricing--title h2::before, .pricing .pricing--title h2::after {
+    width: 8.5rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .pricing .pricing--title h2::before, .pricing .pricing--title h2::after {
+    width: 22.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pricing .pricing--title h2::before, .pricing .pricing--title h2::after {
+    width: 22.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .pricing .pricing--title h2::before, .pricing .pricing--title h2::after {
+    width: 4rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  .pricing .pricing--title h2::before, .pricing .pricing--title h2::after {
+    width: 6.5rem;
+  }
+}
+
+@media (min-width: 355px) and (max-width: 366px) {
+  .pricing .pricing--title h2::before, .pricing .pricing--title h2::after {
+    width: 5.8rem;
+  }
+}
+
+.pricing .pricing--title h2::before {
+  left: 0;
+  margin-right: .5rem;
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff00), to(#9994F0));
+  background: linear-gradient(left, #ffffff00 0%, #9994F0 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#9994f0));
+  background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
+}
+
+.pricing .pricing--title h2::after {
+  right: 0;
+  margin-left: .5rem;
+  border: 0;
+}
+
+.pricing .pricing--title h2 img {
+  width: .5rem;
+  height: 1rem;
+}
+
+.pricing .pricing--cards {
+  margin-bottom: 5rem;
+}
+
+.pricing .pricing--cards .nav-pills {
+  border-radius: 1.875rem;
+}
+
+@media (max-width: 575.98px) {
+  .pricing .pricing--cards .nav-pills .nav-item {
+    width: 80%;
+    text-align: center;
+    margin-bottom: .5rem;
+  }
+}
+
+.pricing .pricing--cards .nav-pills .nav-item .nav-link {
+  border-radius: 0;
+  background-color: var(--color_white);
+  color: var(--color_lightblue);
+  padding: 1.5rem 4.5rem;
+}
+
+@media (max-width: 575.98px) {
+  .pricing .pricing--cards .nav-pills .nav-item .nav-link {
+    padding: 1.5rem 0;
+  }
+}
+
+.pricing .pricing--cards .nav-pills .nav-item .active {
+  background-color: var(--color_lightblue);
+  color: var(--color_white);
+}
+
+@media (max-width: 575.98px) {
+  .pricing .pricing--cards .nav-pills .nav-item .active {
+    border-radius: 1.875rem !important;
+  }
+}
+
+.pricing .pricing--cards .nav-pills .left--radius .nav-link {
+  border-top-left-radius: 1.875rem;
+  border-bottom-left-radius: 1.875rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+@media (max-width: 575.98px) {
+  .pricing .pricing--cards .nav-pills .left--radius .nav-link {
+    border-radius: 0;
+  }
+}
+
+.pricing .pricing--cards .nav-pills .middle--radius .nav-link {
+  border-radius: 0;
+}
+
+.pricing .pricing--cards .nav-pills .right--radius .nav-link {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 1.875rem;
+  border-bottom-right-radius: 1.875rem;
+}
+
+@media (max-width: 575.98px) {
+  .pricing .pricing--cards .nav-pills .right--radius .nav-link {
+    border-radius: 0;
+  }
+}
+
+.pricing .pricing--cards .tab-content .card {
+  border-radius: 0;
+  padding: 3rem 3rem 2rem 3rem;
+  border: 1px solid var(--color_lightblue);
+}
+
+@media (max-width: 575.98px) {
+  .pricing .pricing--cards .tab-content .card {
+    margin: 0 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .pricing .pricing--cards .tab-content .card {
+    margin: 0 .5rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  .pricing .pricing--cards .tab-content .card {
+    margin: 0 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .pricing .pricing--cards .tab-content .card {
+    padding: 3rem 1rem 2rem 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pricing .pricing--cards .tab-content .card {
+    padding: 3rem 1rem 2rem 1rem;
+  }
+}
+
+.pricing .pricing--cards .tab-content .pricing--first {
+  border-top-left-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
+}
+
+.pricing .pricing--cards .tab-content .pricing--first ul li {
+  color: var(--color_black);
+  margin: 1.5rem 0;
+}
+
+.pricing .pricing--cards .tab-content .pricing--second {
+  -webkit-box-shadow: -0.625rem 0rem 1.5625rem 0.3125rem #6f68ec8c;
+          box-shadow: -0.625rem 0rem 1.5625rem 0.3125rem #6f68ec8c;
+  -webkit-box-shadow: -0.625rem 0rem 1.5625rem 0.3125rem rgba(111, 104, 236, 0.55);
+          box-shadow: -0.625rem 0rem 1.5625rem 0.3125rem rgba(111, 104, 236, 0.55);
+  z-index: 1;
+}
+
+.pricing .pricing--cards .tab-content .pricing--second ul li {
+  color: var(--color_green);
+  margin: 1.5rem 0;
+}
+
+.pricing .pricing--cards .tab-content .pricing--third {
+  -webkit-box-shadow: 0.625rem 0rem 1.5625rem 0.3125rem #6f68ec8c;
+          box-shadow: 0.625rem 0rem 1.5625rem 0.3125rem #6f68ec8c;
+  -webkit-box-shadow: 0.625rem 0rem 1.5625rem 0.3125rem rgba(111, 104, 236, 0.55);
+          box-shadow: 0.625rem 0rem 1.5625rem 0.3125rem rgba(111, 104, 236, 0.55);
+  z-index: 1;
+}
+
+.pricing .pricing--cards .tab-content .pricing--third ul li {
+  color: var(--color_red);
+  margin: 1.5rem 0;
+}
+
+.pricing .pricing--cards .tab-content .pricing--fourth {
+  border-top-right-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+}
+
+.pricing .pricing--cards .tab-content .pricing--fourth ul li {
+  color: var(--color_black);
+  margin: 1.5rem 0;
+}
+
+.pricing .pricing--cards h3 {
+  color: var(--color_lightblue);
+}
+
+.pricing .pricing--cards ul {
+  padding-top: .5rem;
+}
+
+.pricing .pricing--cards ul li {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 575.98px) {
+  .pricing .pricing--cards ul li {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .pricing .pricing--cards ul li {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pricing .pricing--cards ul li {
+    font-size: 1rem;
+  }
+}
+
+.pricing .pricing--cards hr {
+  background-color: var(--color_lightblue);
 }
 /*# sourceMappingURL=style.css.map */

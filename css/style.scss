@@ -134,7 +134,7 @@ a, select , input , textarea , button{
 }
 
 .bold--24{
-    font-size: 4rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -360,6 +360,7 @@ a, select , input , textarea , button{
                 height: 0.2rem;
                 top: .9rem;
                 background: linear-gradient(right , #ffffff00 0%, #9994F0 100%);
+                background: linear-gradient(right , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
                 @media (max-width: 575.98px) {
                     width: 9rem;
                 }
@@ -383,6 +384,7 @@ a, select , input , textarea , button{
                 left: 0;
                 margin-right: .5rem;
                 background: linear-gradient(left , #ffffff00 0%, #9994F0 100%);
+                background: linear-gradient(left , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
             }
             &::after{
                 right: 0;
@@ -556,6 +558,7 @@ a, select , input , textarea , button{
                 height: 0.2rem;
                 top: 0.96rem;
                 background: linear-gradient(right , #ffffff00 0%, #9994F0 100%);
+                background: linear-gradient(right , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
                 @media (max-width: 575.98px) {
                     width: 7.5rem;
                     top: 0.9rem;
@@ -591,6 +594,7 @@ a, select , input , textarea , button{
                 left: 0;
                 margin-right: .5rem;
                 background: linear-gradient(left , #ffffff00 0%, #9994F0 100%);
+                background: linear-gradient(left , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
             }
             &::after{
                 right: 0;
@@ -813,6 +817,7 @@ a, select , input , textarea , button{
                 height: 0.2rem;
                 top: .95rem;
                 background: linear-gradient(right , #ffffff00 0%, #9994F0 100%);
+                background: linear-gradient(right , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
                 @media (max-width: 575.98px) {
                     width: 10rem;
                 }
@@ -836,6 +841,7 @@ a, select , input , textarea , button{
                 left: 0;
                 margin-right: .5rem;
                 background: linear-gradient(left , #ffffff00 0%, #9994F0 100%);
+                background: linear-gradient(left , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
             }
             &::after{
                 right: 0;
@@ -1081,6 +1087,7 @@ a, select , input , textarea , button{
                 height: 0.2rem;
                 top: .96rem;
                 background: linear-gradient(right , #ffffff00 0%, #9994F0 100%);
+                background: linear-gradient(right , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
                 @media (max-width: 575.98px) {
                     width: 10rem;
                 }
@@ -1114,6 +1121,7 @@ a, select , input , textarea , button{
                 left: 0;
                 margin-right: .5rem;
                 background: linear-gradient(left , #ffffff00 0%, #9994F0 100%);
+                background: linear-gradient(left , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
             }
             &::after{
                 right: 0;
@@ -1245,6 +1253,7 @@ a, select , input , textarea , button{
                 height: 0.2rem;
                 top: .95rem;
                 background: linear-gradient(right , #ffffff00 0%, #9994F0 100%);
+                background: linear-gradient(right , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
                 @media (max-width: 575.98px) {
                     width: 9rem;
                 }
@@ -1268,6 +1277,7 @@ a, select , input , textarea , button{
                 left: 0;
                 margin-right: .5rem;
                 background: linear-gradient(left , #ffffff00 0%, #9994F0 100%);
+                background: linear-gradient(left , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
             }
             &::after{
                 right: 0;
@@ -1307,6 +1317,211 @@ a, select , input , textarea , button{
             @media (max-width: 320px) {
                 font-size: .93rem;
             }
+        }
+    }
+}
+
+/* pricing starts */
+.pricing{
+    .c--custom--2 {
+        max-width: 88rem;
+    }
+    .pricing--title{
+        margin: 5rem 0 3rem 0;
+        h2{
+            position: relative;
+            right: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            &::before, &::after {
+                position: absolute;
+                content: "";
+                width: 31.5rem;
+                height: 0.2rem;
+                top: .9rem;
+                background: linear-gradient(right , #ffffff00 0%, #9994F0 100%);
+                background: linear-gradient(right , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
+                @media (max-width: 575.98px) {
+                    width: 8.5rem;
+                }
+                @media (min-width: 576px) and (max-width: 767.98px) {
+                    width: 22.5rem;
+                }
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    width: 22.5rem;
+                }
+                @media (max-width: 320px) {
+                    width: 4rem;
+                }
+                @media (min-width: 321px) and (max-width: 376px) {
+                    width: 6.5rem;
+                }
+                @media (min-width: 355px) and (max-width: 366px) {
+                    width: 5.8rem;
+                }
+            }
+            &::before{
+                left: 0;
+                margin-right: .5rem;
+                background: linear-gradient(left , #ffffff00 0%, #9994F0 100%);
+                background: linear-gradient(left , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
+                 
+            }
+            &::after{
+                right: 0;
+                margin-left: .5rem;
+                border: 0;
+            }
+            img{
+                width: .5rem;
+                height: 1rem;
+            }
+        }
+    }
+    .pricing--cards{
+        margin-bottom: 5rem;
+        .nav-pills {
+            border-radius: 1.875rem;
+            .nav-item{
+                @media (max-width: 575.98px) {
+                    width: 80%;
+                    text-align: center;
+                    margin-bottom: .5rem;
+                }
+                .nav-link{
+                    border-radius: 0;
+                    background-color: $color_white;
+                    color: $color_lightblue;
+                    padding: 1.5rem 4.5rem;
+                    @media (max-width: 575.98px) {
+                        padding: 1.5rem 0;
+                    }
+                }
+                .active{
+                    background-color: $color_lightblue;
+                    color: $color_white;
+                    @media (max-width: 575.98px) {
+                        border-radius: 1.875rem !important;
+                    }
+                }
+            }
+            .left--radius{
+                .nav-link{
+                    border-top-left-radius: 1.875rem;
+                    border-bottom-left-radius: 1.875rem;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    @media (max-width: 575.98px) {
+                        border-radius: 0;
+                    }
+                }
+            }
+            .middle--radius{
+                .nav-link{
+                    border-radius: 0;
+                }
+            }
+            .right--radius{
+                .nav-link{
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    border-top-right-radius: 1.875rem;
+                    border-bottom-right-radius: 1.875rem;
+                    @media (max-width: 575.98px) {
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+        .tab-content{
+            .card{
+                border-radius: 0;
+                padding: 3rem 3rem 2rem 3rem;
+                border: 1px solid $color_lightblue;
+                @media (max-width: 575.98px) {
+                    margin: 0 1.5rem;
+                }
+                @media (max-width: 320px) {
+                    margin: 0 .5rem;
+                }
+                
+                @media (min-width: 321px) and (max-width: 376px) {
+                    margin: 0 1rem;
+                }
+                @media (min-width: 576px) and (max-width: 767.98px) {
+                    padding: 3rem 1rem 2rem 1rem;
+                }
+                
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    padding: 3rem 1rem 2rem 1rem;
+                }
+            }
+            .pricing--first{
+                border-top-left-radius: 0.625rem;
+                border-bottom-left-radius: 0.625rem;
+                ul{
+                    li{
+                        color: $color_black;
+                        margin: 1.5rem 0;
+                    }
+                }
+            }
+            .pricing--second{
+                box-shadow: -0.625rem 0rem 1.5625rem 0.3125rem #6f68ec8c;
+                box-shadow: -0.625rem 0rem 1.5625rem 0.3125rem rgba(111,104,236,0.55);
+                z-index: 1;
+                ul{
+                    li{
+                        color: $color_green;
+                        margin: 1.5rem 0;
+                    }
+                }
+            }
+            .pricing--third{
+                box-shadow: 0.625rem 0rem 1.5625rem 0.3125rem #6f68ec8c;
+                box-shadow: 0.625rem 0rem 1.5625rem 0.3125rem rgba(111,104,236,0.55);
+                z-index: 1;
+                ul{
+                    li{
+                        color: $color_red;
+                        margin: 1.5rem 0;
+                    }
+                }
+            }
+            .pricing--fourth{
+                border-top-right-radius: 0.625rem;
+                border-bottom-right-radius: 0.625rem;
+                ul{
+                    li{
+                        color: $color_black;
+                        margin: 1.5rem 0;
+                    }
+                }
+            }
+        }
+        h3{
+            color: $color_lightblue;
+        }
+        ul{
+            padding-top: .5rem;
+            li{
+                font-size: 1.5rem;
+                font-weight: 700;
+                @media (max-width: 575.98px) {
+                    font-size: 1rem;
+                }
+                
+                @media (min-width: 576px) and (max-width: 767.98px) {
+                    font-size: 1rem;
+                }
+                
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    font-size: 1rem;
+                }
+            }
+        }
+        hr {
+            background-color: $color_lightblue;
         }
     }
 }

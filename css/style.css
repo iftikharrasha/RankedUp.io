@@ -219,6 +219,10 @@ a, select, input, textarea, button {
   z-index: 9999;
 }
 
+.header .c--custom--2 {
+  max-width: 88rem;
+}
+
 .header .header--nav #brand {
   width: 16rem;
 }
@@ -520,6 +524,12 @@ a, select, input, textarea, button {
 @media (min-width: 321px) and (max-width: 376px) {
   .project .project--title h2::before, .project .project--title h2::after {
     width: 6.5rem;
+  }
+}
+
+@media (min-width: 355px) and (max-width: 366px) {
+  .project .project--title h2::before, .project .project--title h2::after {
+    width: 6rem;
   }
 }
 
@@ -852,6 +862,12 @@ a, select, input, textarea, button {
 @media (min-width: 321px) and (max-width: 376px) {
   .popular .popular--title h2::before, .popular .popular--title h2::after {
     width: 5.5rem;
+  }
+}
+
+@media (min-width: 355px) and (max-width: 366px) {
+  .popular .popular--title h2::before, .popular .popular--title h2::after {
+    width: 5rem;
   }
 }
 
@@ -1226,6 +1242,12 @@ a, select, input, textarea, button {
 @media (min-width: 321px) and (max-width: 376px) {
   .service .service--title h2::before, .service .service--title h2::after {
     width: 7.5rem;
+  }
+}
+
+@media (min-width: 355px) and (max-width: 366px) {
+  .service .service--title h2::before, .service .service--title h2::after {
+    width: 7rem;
   }
 }
 
@@ -1666,6 +1688,12 @@ a, select, input, textarea, button {
   }
 }
 
+@media (min-width: 355px) and (max-width: 366px) {
+  .contact .contact--title h2::before, .contact .contact--title h2::after {
+    width: 7.5rem;
+  }
+}
+
 .contact .contact--title h2::before {
   left: 0;
   margin-right: .5rem;
@@ -1848,5 +1876,119 @@ a, select, input, textarea, button {
   #backToTop {
     right: 2.5rem !important;
   }
+}
+
+/* inner page */
+.page {
+  min-height: 55rem;
+}
+
+.page .c--custom--2 {
+  max-width: 88rem;
+}
+
+.page .page--title {
+  padding: 6.5rem 0 2rem 0;
+}
+
+.page .page--title h2 {
+  position: relative;
+  right: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.page .page--title h2::before, .page .page--title h2::after {
+  position: absolute;
+  content: "";
+  width: 32rem;
+  height: 0.2rem;
+  top: .95rem;
+  background: -webkit-gradient(linear, right top, left top, from(#ffffff00), to(#9994F0));
+  background: linear-gradient(right, #ffffff00 0%, #9994F0 100%);
+}
+
+@media (max-width: 575.98px) {
+  .page .page--title h2::before, .page .page--title h2::after {
+    width: 9rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .page .page--title h2::before, .page .page--title h2::after {
+    width: 23rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .page .page--title h2::before, .page .page--title h2::after {
+    width: 23rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .page .page--title h2::before, .page .page--title h2::after {
+    width: 4.5rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  .page .page--title h2::before, .page .page--title h2::after {
+    width: 6.5rem;
+  }
+}
+
+@media (min-width: 355px) and (max-width: 366px) {
+  .page .page--title h2::before, .page .page--title h2::after {
+    width: 6rem;
+  }
+}
+
+.page .page--title h2::before {
+  left: 0;
+  margin-right: .5rem;
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff00), to(#9994F0));
+  background: linear-gradient(left, #ffffff00 0%, #9994F0 100%);
+}
+
+.page .page--title h2::after {
+  right: 0;
+  margin-left: .5rem;
+  border: 0;
+}
+
+.page .page--title h2 img {
+  width: .5rem;
+  height: 1rem;
+}
+
+.page .page--top {
+  min-height: auto;
+}
+
+.page .page--top .banner {
+  border: 5px solid var(--color_purple);
+  border-radius: 30px;
+}
+
+@media (max-width: 991.98px) {
+  .page .page--top h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.page .page--top h2 {
+  color: var(--color_purple);
+}
+
+@media (max-width: 991.98px) {
+  .page .page--top h2 {
+    font-size: 1.25rem;
+  }
+}
+
+.page01 {
+  padding-bottom: 7rem;
 }
 /*# sourceMappingURL=style.css.map */

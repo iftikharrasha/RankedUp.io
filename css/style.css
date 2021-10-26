@@ -2039,7 +2039,42 @@ a, select, input, textarea, button {
 }
 
 .pricing .pricing--title {
-  margin: 5rem 0 3rem 0;
+  margin: 4rem 0 3rem 0;
+}
+
+.pricing .pricing--title img {
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 575.98px) {
+  .pricing .pricing--title img {
+    width: 3rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .pricing .pricing--title img {
+    width: 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pricing .pricing--title img {
+    width: 3rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299.98px) {
+  .pricing .pricing--title img {
+    width: 3rem;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1531.98px) {
+  .pricing .pricing--title img {
+    width: 4rem;
+  }
 }
 
 .pricing .pricing--title h2 {
@@ -2055,7 +2090,7 @@ a, select, input, textarea, button {
   content: "";
   width: 31.5rem;
   height: 0.2rem;
-  top: .9rem;
+  top: 0;
   background: -webkit-gradient(linear, right top, left top, from(#ffffff00), to(#9994F0));
   background: linear-gradient(right, #ffffff00 0%, #9994F0 100%);
   background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(#9994f0));
@@ -2114,8 +2149,246 @@ a, select, input, textarea, button {
 }
 
 .pricing .pricing--title h2 img {
+  position: relative;
+  bottom: .9rem;
   width: .5rem;
   height: 1rem;
+}
+
+.pricing .pricing--title .reddit::before, .pricing .pricing--title .reddit::after {
+  width: 35rem;
+}
+
+@media (max-width: 575.98px) {
+  .pricing .pricing--title .reddit::before, .pricing .pricing--title .reddit::after {
+    width: 12rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .pricing .pricing--title .reddit::before, .pricing .pricing--title .reddit::after {
+    width: 26rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pricing .pricing--title .reddit::before, .pricing .pricing--title .reddit::after {
+    width: 26rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .pricing .pricing--title .reddit::before, .pricing .pricing--title .reddit::after {
+    width: 7.5rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  .pricing .pricing--title .reddit::before, .pricing .pricing--title .reddit::after {
+    width: 10rem;
+  }
+}
+
+@media (min-width: 355px) and (max-width: 366px) {
+  .pricing .pricing--title .reddit::before, .pricing .pricing--title .reddit::after {
+    width: 9.4rem;
+  }
+}
+
+.pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+  width: 34.5rem;
+}
+
+@media (max-width: 575.98px) {
+  .pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+    width: 11rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+    width: 25.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+    width: 25.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299.98px) {
+  .pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+    width: 34rem;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1531.98px) {
+  .pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+    width: 34rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+    width: 7rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  .pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+    width: 9rem;
+  }
+}
+
+@media (min-width: 355px) and (max-width: 366px) {
+  .pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+    width: 8.5rem;
+  }
+}
+
+.pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+  width: 33.5rem;
+}
+
+@media (max-width: 575.98px) {
+  .pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+    width: 10rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+    width: 24.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+    width: 24.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299.98px) {
+  .pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+    width: 33rem;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1531.98px) {
+  .pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+    width: 33rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+    width: 6rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  .pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+    width: 8rem;
+  }
+}
+
+@media (min-width: 355px) and (max-width: 366px) {
+  .pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+    width: 7.5rem;
+  }
+}
+
+.pricing .pricing--title .coinhunt::before, .pricing .pricing--title .coinhunt::after {
+  width: 34rem;
+}
+
+@media (max-width: 575.98px) {
+  .pricing .pricing--title .coinhunt::before, .pricing .pricing--title .coinhunt::after {
+    width: 11rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .pricing .pricing--title .coinhunt::before, .pricing .pricing--title .coinhunt::after {
+    width: 25rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pricing .pricing--title .coinhunt::before, .pricing .pricing--title .coinhunt::after {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .pricing .pricing--title .coinhunt::before, .pricing .pricing--title .coinhunt::after {
+    width: 6.5rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  .pricing .pricing--title .coinhunt::before, .pricing .pricing--title .coinhunt::after {
+    width: 8.5rem;
+  }
+}
+
+@media (min-width: 355px) and (max-width: 366px) {
+  .pricing .pricing--title .coinhunt::before, .pricing .pricing--title .coinhunt::after {
+    width: 8rem;
+  }
+}
+
+.pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+  width: 35rem;
+}
+
+@media (max-width: 575.98px) {
+  .pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+    width: 11.5rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+    width: 26rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+    width: 26rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299.98px) {
+  .pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+    width: 34.5rem;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1531.98px) {
+  .pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+    width: 34.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+    width: 7.5rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  .pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+    width: 9.5rem;
+  }
+}
+
+@media (min-width: 355px) and (max-width: 366px) {
+  .pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+    width: 9rem;
+  }
 }
 
 .pricing .pricing--cards {
@@ -2229,6 +2502,13 @@ a, select, input, textarea, button {
   border-bottom-left-radius: 0.625rem;
 }
 
+@media (max-width: 575.98px) {
+  .pricing .pricing--cards .tab-content .pricing--first {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.625rem;
+  }
+}
+
 .pricing .pricing--cards .tab-content .pricing--first ul li {
   color: var(--color_black);
   margin: 1.5rem 0;
@@ -2263,6 +2543,13 @@ a, select, input, textarea, button {
 .pricing .pricing--cards .tab-content .pricing--fourth {
   border-top-right-radius: 0.625rem;
   border-bottom-right-radius: 0.625rem;
+}
+
+@media (max-width: 575.98px) {
+  .pricing .pricing--cards .tab-content .pricing--fourth {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.625rem;
+  }
 }
 
 .pricing .pricing--cards .tab-content .pricing--fourth ul li {

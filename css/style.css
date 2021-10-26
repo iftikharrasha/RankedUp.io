@@ -1606,6 +1606,12 @@ a, select, input, textarea, button {
 }
 
 @media (max-width: 575.98px) {
+  .service .service--table .service--card .card--data .inserted .price p span {
+    display: block;
+  }
+}
+
+@media (max-width: 575.98px) {
   .service .service--table .service--card .card--data .inserted .headlines {
     width: 50%;
     background-color: white;
@@ -1881,6 +1887,7 @@ a, select, input, textarea, button {
 /* inner page */
 .page {
   min-height: 55rem;
+  padding-bottom: 7rem;
 }
 
 .page .c--custom--2 {
@@ -1968,8 +1975,20 @@ a, select, input, textarea, button {
 }
 
 .page .page--top .banner {
-  border: 5px solid var(--color_purple);
-  border-radius: 30px;
+  border: 0.3125rem solid var(--color_purple);
+  border-radius: 1.875rem;
+}
+
+@media (max-width: 575.98px) {
+  .page .page--top .banner {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .page .page--top .banner {
+    width: 22rem;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -1988,7 +2007,9 @@ a, select, input, textarea, button {
   }
 }
 
-.page01 {
-  padding-bottom: 7rem;
+@media (max-width: 320px) {
+  .page .page--top p {
+    font-size: .93rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

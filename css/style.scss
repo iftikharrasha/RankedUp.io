@@ -1038,6 +1038,15 @@ a, select , input , textarea , button{
                             text-align: right;
                         }
                     }
+                    .price{
+                        p{
+                            span{
+                                @media (max-width: 575.98px) {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
                     .headlines{
                         @media (max-width: 575.98px) {
                             width: 50%;
@@ -1218,6 +1227,7 @@ a, select , input , textarea , button{
 /* inner page */
 .page{
     min-height: 55rem;
+    padding-bottom: 7rem;
     .c--custom--2 {
         max-width: 88rem;
     }
@@ -1273,8 +1283,14 @@ a, select , input , textarea , button{
     .page--top{
         min-height: auto;
         .banner{
-            border: 5px solid $color_purple;
-            border-radius: 30px;
+            border: 0.3125rem solid $color_purple;
+            border-radius: 1.875rem;
+            @media (max-width: 575.98px) {
+                width: 25rem;
+            }
+            @media (max-width: 320px) {
+                width: 22rem;
+            }
         }
         h1{
             @media (max-width: 991.98px) {
@@ -1287,9 +1303,10 @@ a, select , input , textarea , button{
                 font-size: 1.25rem;
             }
         }
+        p{
+            @media (max-width: 320px) {
+                font-size: .93rem;
+            }
+        }
     }
-}
-
-.page01{
-    padding-bottom: 7rem;
 }

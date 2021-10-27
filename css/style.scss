@@ -321,7 +321,6 @@ a, select , input , textarea , button{
                     animation: cubeAnime 10s ease-in-out infinite;
                 }
                 @keyframes cubeAnime{
-	
                     0%{
                         background-position: 0 50%;
                     }
@@ -1547,9 +1546,12 @@ a, select , input , textarea , button{
                     border-radius: 0;
                     background-color: $color_white;
                     color: $color_lightblue;
-                    padding: 1.5rem 4.5rem;
+                    padding: 1.5rem 0;
                     @media (max-width: 575.98px) {
                         padding: 1.5rem 0;
+                    }
+                    @media (min-width: 575.98px) {
+                        width: 20rem;
                     }
                 }
                 .active{
@@ -1569,11 +1571,18 @@ a, select , input , textarea , button{
                     @media (max-width: 575.98px) {
                         border-radius: 0;
                     }
+                    @media (min-width: 576px) {
+                        padding-right:  4rem;
+                        text-align: right;
+                    }
                 }
             }
             .middle--radius{
                 .nav-link{
+                    border-right: 1px solid rgba(0,0,0,.1);
+                    border-left: 1px solid rgba(0,0,0,.1);
                     border-radius: 0;
+                    text-align: center;
                 }
             }
             .right--radius{
@@ -1582,6 +1591,22 @@ a, select , input , textarea , button{
                     border-bottom-left-radius: 0;
                     border-top-right-radius: 1.875rem;
                     border-bottom-right-radius: 1.875rem;
+                    @media (max-width: 575.98px) {
+                        border-radius: 0;
+                    }
+                    @media (min-width: 576px) {
+                        padding-left:  4rem;
+                        text-align: left;
+                    }
+                }
+            }
+            .single--radius{
+                .nav-link{
+                    border-top-left-radius: 1.875rem;
+                    border-bottom-left-radius: 1.875rem;
+                    border-top-right-radius: 1.875rem;
+                    border-bottom-right-radius: 1.875rem;
+                    text-align: center;
                     @media (max-width: 575.98px) {
                         border-radius: 0;
                     }

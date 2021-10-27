@@ -2411,12 +2411,18 @@ a, select, input, textarea, button {
   border-radius: 0;
   background-color: var(--color_white);
   color: var(--color_lightblue);
-  padding: 1.5rem 4.5rem;
+  padding: 1.5rem 0;
 }
 
 @media (max-width: 575.98px) {
   .pricing .pricing--cards .nav-pills .nav-item .nav-link {
     padding: 1.5rem 0;
+  }
+}
+
+@media (min-width: 575.98px) {
+  .pricing .pricing--cards .nav-pills .nav-item .nav-link {
+    width: 20rem;
   }
 }
 
@@ -2444,8 +2450,18 @@ a, select, input, textarea, button {
   }
 }
 
+@media (min-width: 576px) {
+  .pricing .pricing--cards .nav-pills .left--radius .nav-link {
+    padding-right: 4rem;
+    text-align: right;
+  }
+}
+
 .pricing .pricing--cards .nav-pills .middle--radius .nav-link {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0;
+  text-align: center;
 }
 
 .pricing .pricing--cards .nav-pills .right--radius .nav-link {
@@ -2457,6 +2473,27 @@ a, select, input, textarea, button {
 
 @media (max-width: 575.98px) {
   .pricing .pricing--cards .nav-pills .right--radius .nav-link {
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .pricing .pricing--cards .nav-pills .right--radius .nav-link {
+    padding-left: 4rem;
+    text-align: left;
+  }
+}
+
+.pricing .pricing--cards .nav-pills .single--radius .nav-link {
+  border-top-left-radius: 1.875rem;
+  border-bottom-left-radius: 1.875rem;
+  border-top-right-radius: 1.875rem;
+  border-bottom-right-radius: 1.875rem;
+  text-align: center;
+}
+
+@media (max-width: 575.98px) {
+  .pricing .pricing--cards .nav-pills .single--radius .nav-link {
     border-radius: 0;
   }
 }

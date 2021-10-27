@@ -32,5 +32,18 @@ $(window).scroll(function () {
     }
 });
 
-/********* go back to top ********/
-$('#backToTop').gotop();
+
+$(document).ready(function () {
+    /********* go back to top ********/
+    $('#backToTop').gotop();
+
+    /********* aos animations ********/
+    AOS.init({
+        duration: 800,
+        easing: 'ease',
+        once: false
+    });
+});
+
+
+

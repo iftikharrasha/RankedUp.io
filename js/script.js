@@ -1,3 +1,28 @@
+/********* update date ********/
+var months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+];
+
+window.onload = function () {
+    const date = new Date();
+    const month = date.getMonth();
+    const day = date.getDate();
+    const year = date.getFullYear();
+  
+    $('#date').text(`${day}/${month+1}/${year}`);
+};
+
 /********* sticky header ********/
 $(window).scroll(function () {
     if ($(window).scrollTop() > 5) {
@@ -6,3 +31,6 @@ $(window).scroll(function () {
         $("header").removeClass("stick");
     }
 });
+
+/********* go back to top ********/
+$('#backToTop').gotop();

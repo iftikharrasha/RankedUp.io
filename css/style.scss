@@ -268,6 +268,7 @@ a, select , input , textarea , button{
                 @media (max-width: 575.98px) {
                     width: 40%;
                     margin: 0 auto;
+                    display: none !important;
                 }
             }
         }
@@ -329,7 +330,7 @@ a, select , input , textarea , button{
                         background-position: 0 50%;
                     }
                     50%{
-                        background-position: 100% 50%;
+                        background-position: 100% 100%;
                     }
                     100%{
                         background-position: 0 50%;
@@ -356,7 +357,8 @@ a, select , input , textarea , button{
             right: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            &::before, &::after {
+            .line-1, .line-2 {
+                display: inline;
                 position: absolute;
                 content: "";
                 width: 32rem;
@@ -382,21 +384,29 @@ a, select , input , textarea , button{
                 @media (min-width: 355px) and (max-width: 366px) {
                     width: 6rem;
                 }
+                span{
+                    position: absolute;
+                    top: -0.20rem;
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    border-radius: 50%;
+                    background-color: $color_purple;
+                }
             }
-            &::before{
+            .line-1{
                 left: 0;
-                margin-right: .5rem;
                 background: linear-gradient(left , #ffffff00 0%, #9994F0 100%);
                 background: linear-gradient(left , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
+                span{
+                    right: 0;
+                }
             }
-            &::after{
+            .line-2{
                 right: 0;
-                margin-left: .5rem;
                 border: 0;
-            }
-            img{
-                width: .5rem;
-                height: 1rem;
+                span{
+                    left: 0;
+                }
             }
         }
         h4{
@@ -554,7 +564,8 @@ a, select , input , textarea , button{
             right: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            &::before, &::after {
+            .line-1, .line-2 {
+                display: inline;
                 position: absolute;
                 content: "";
                 width: 30.8rem;
@@ -592,21 +603,29 @@ a, select , input , textarea , button{
                 @media (min-width: 355px) and (max-width: 366px) {
                     width: 5rem;
                 }
+                span{
+                    position: absolute;
+                    top: -0.20rem;
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    border-radius: 50%;
+                    background-color: $color_purple;
+                }
             }
-            &::before{
+            .line-1{
                 left: 0;
-                margin-right: .5rem;
                 background: linear-gradient(left , #ffffff00 0%, #9994F0 100%);
                 background: linear-gradient(left , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
+                span{
+                    right: 0;
+                }
             }
-            &::after{
+            .line-2{
                 right: 0;
-                margin-left: .5rem;
                 border: 0;
-            }
-            img{
-                width: .5rem;
-                height: 1rem;
+                span{
+                    left: 0;
+                }
             }
         }
         h4{
@@ -813,7 +832,8 @@ a, select , input , textarea , button{
             right: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            &::before, &::after {
+            .line-1, .line-2 {
+                display: inline;
                 position: absolute;
                 content: "";
                 width: 33rem;
@@ -839,21 +859,29 @@ a, select , input , textarea , button{
                 @media (min-width: 355px) and (max-width: 366px) {
                     width: 7rem;
                 }
+                span{
+                    position: absolute;
+                    top: -0.20rem;
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    border-radius: 50%;
+                    background-color: $color_purple;
+                }
             }
-            &::before{
+            .line-1{
                 left: 0;
-                margin-right: .5rem;
                 background: linear-gradient(left , #ffffff00 0%, #9994F0 100%);
                 background: linear-gradient(left , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
+                span{
+                    right: 0;
+                }
             }
-            &::after{
+            .line-2{
                 right: 0;
-                margin-left: .5rem;
                 border: 0;
-            }
-            img{
-                width: .5rem;
-                height: 1rem;
+                span{
+                    left: 0;
+                }
             }
         }
         h4{
@@ -912,12 +940,16 @@ a, select , input , textarea , button{
                     }
                     .platform--icon{
                         @include flexCenter;
-                        background: #817EC3;
+                        background: $color_purple;
                         padding: 1rem;
                         border-top-left-radius: 0.4rem;
                         border-bottom-left-radius: 0.4rem;
                         width: 4rem;
                         height: 4rem;
+                        @media (max-width: 575.98px) {
+                            border-top-left-radius: 0;
+                            border-bottom-left-radius: 0;
+                        }
                         @media (min-width: 768px) and (max-width: 991.98px) {
                             width: 3.5rem;
                             height: 3.5rem;
@@ -940,7 +972,7 @@ a, select , input , textarea , button{
                     .platform--toggle{
                         position: absolute;
                         right: .5rem;
-                        color: #817EC3;
+                        color: $color_purple;
                     }
                 }
                 .label{
@@ -1059,8 +1091,8 @@ a, select , input , textarea , button{
                     .headlines{
                         @media (max-width: 575.98px) {
                             width: 50%;
-                            background-color: white;
-                            color: black;
+                            background: $color_purple;
+                            color: $color_white;
                             padding: 0.8rem;
                         }
                     }
@@ -1083,7 +1115,8 @@ a, select , input , textarea , button{
             right: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            &::before, &::after {
+            .line-1, .line-2 {
+                display: inline;
                 position: absolute;
                 content: "";
                 width: 33.5rem;
@@ -1119,21 +1152,29 @@ a, select , input , textarea , button{
                 @media (min-width: 355px) and (max-width: 366px) {
                     width: 7.5rem;
                 }
+                span{
+                    position: absolute;
+                    top: -0.20rem;
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    border-radius: 50%;
+                    background-color: $color_purple;
+                }
             }
-            &::before{
+            .line-1{
                 left: 0;
-                margin-right: .5rem;
                 background: linear-gradient(left , #ffffff00 0%, #9994F0 100%);
                 background: linear-gradient(left , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
+                span{
+                    right: 0;
+                }
             }
-            &::after{
+            .line-2{
                 right: 0;
-                margin-left: .5rem;
                 border: 0;
-            }
-            img{
-                width: .5rem;
-                height: 1rem;
+                span{
+                    left: 0;
+                }
             }
         }
         p{
@@ -1224,6 +1265,7 @@ a, select , input , textarea , button{
         right: 2.5rem !important;
         width: 3rem;
         height: 3rem;
+        display: none !important;
     }
     
     @media (min-width: 576px) and (max-width: 767.98px) {
@@ -1249,7 +1291,8 @@ a, select , input , textarea , button{
             right: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            &::before, &::after {
+            .line-1, .line-2 {
+                display: inline;
                 position: absolute;
                 content: "";
                 width: 32rem;
@@ -1275,21 +1318,29 @@ a, select , input , textarea , button{
                 @media (min-width: 355px) and (max-width: 366px) {
                     width: 6rem;
                 }
+                span{
+                    position: absolute;
+                    top: -0.20rem;
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    border-radius: 50%;
+                    background-color: $color_purple;
+                }
             }
-            &::before{
+            .line-1{
                 left: 0;
-                margin-right: .5rem;
                 background: linear-gradient(left , #ffffff00 0%, #9994F0 100%);
                 background: linear-gradient(left , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
+                span{
+                    right: 0;
+                }
             }
-            &::after{
+            .line-2{
                 right: 0;
-                margin-left: .5rem;
                 border: 0;
-            }
-            img{
-                width: .5rem;
-                height: 1rem;
+                span{
+                    left: 0;
+                }
             }
         }
     }
@@ -1355,7 +1406,8 @@ a, select , input , textarea , button{
             right: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            &::before, &::after {
+            .line-1, .line-2 {
+                display: inline;
                 position: absolute;
                 content: "";
                 width: 31.5rem;
@@ -1381,28 +1433,33 @@ a, select , input , textarea , button{
                 @media (min-width: 355px) and (max-width: 366px) {
                     width: 5.8rem;
                 }
+                span{
+                    position: absolute;
+                    top: -0.20rem;
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    border-radius: 50%;
+                    background-color: $color_purple;
+                }
             }
-            &::before{
+            .line-1{
                 left: 0;
-                margin-right: .5rem;
                 background: linear-gradient(left , #ffffff00 0%, #9994F0 100%);
                 background: linear-gradient(left , rgba(255,255,255,0) 0%, rgba(153,148,240,1) 100%);
-                 
+                span{
+                    right: 0;
+                }
             }
-            &::after{
+            .line-2{
                 right: 0;
-                margin-left: .5rem;
                 border: 0;
-            }
-            img{
-                position: relative;
-                bottom: .9rem;
-                width: .5rem;
-                height: 1rem;
+                span{
+                    left: 0;
+                }
             }
         }
         .reddit{
-            &::before, &::after {
+            .line-1, .line-2 {
                 width: 35rem;
                 @media (max-width: 575.98px) {
                     width: 12rem;
@@ -1426,7 +1483,7 @@ a, select , input , textarea , button{
             }
         }
         .poocoin{
-            &::before, &::after {
+            .line-1, .line-2 {
                 width: 34.5rem;
                 @media (max-width: 575.98px) {
                     width: 11rem;
@@ -1455,7 +1512,7 @@ a, select , input , textarea , button{
             }
         }
         .coinsniper{
-            &::before, &::after {
+            .line-1, .line-2 {
                 width: 33.5rem;
                 @media (max-width: 575.98px) {
                     width: 10rem;
@@ -1484,7 +1541,7 @@ a, select , input , textarea , button{
             }
         }
         .coinhunt{
-            &::before, &::after {
+            .line-1, .line-2 {
                 width: 34rem;
                 @media (max-width: 575.98px) {
                     width: 11rem;
@@ -1507,7 +1564,7 @@ a, select , input , textarea , button{
             }
         }
         .dxsale{
-            &::before, &::after {
+            .line-1, .line-2 {
                 width: 35rem;
                 @media (max-width: 575.98px) {
                     width: 11.5rem;
@@ -1562,7 +1619,7 @@ a, select , input , textarea , button{
                     background-color: $color_lightblue;
                     color: $color_white;
                     @media (max-width: 575.98px) {
-                        border-radius: 1.875rem !important;
+                        border-radius: 0;
                     }
                 }
             }

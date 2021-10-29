@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ranked Up</title>
     <link rel="icon" href="./img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/fontawesome.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="./css/aos.css"/>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -25,19 +25,19 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-lg-auto mb-0 menu">
                                 <li class="nav-item ml-lg-4">
-                                    <a class="nav-link bold--17" href="index.html#home">Home</a>
+                                    <a class="nav-link bold--17" href="#home">Home</a>
                                 </li>
                                 <li class="nav-item ml-lg-4">
-                                    <a class="nav-link bold--17" href="index.html#project-stages">Project Stages</a>
+                                    <a class="nav-link bold--17" href="#project-stages">Project Stages</a>
                                 </li>
                                 <li class="nav-item ml-lg-4">
-                                    <a class="nav-link bold--17" href="index.html#popular">Most popular</a>
+                                    <a class="nav-link bold--17" href="#popular">Most popular</a>
                                 </li>
                                 <li class="nav-item ml-lg-4">
-                                    <a class="nav-link bold--17" href="index.html#services">All Services</a>
+                                    <a class="nav-link bold--17" href="#services">All Services</a>
                                 </li>
                                 <li class="nav-item ml-lg-4">
-                                    <a class="nav-link bold--17" href="index.html#contact">Contact Us</a>
+                                    <a class="nav-link bold--17" href="#contact">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -113,9 +113,9 @@
         <div class="container c--custom">
             <div class="project--title text-center">
                 <h2 class="bold--26 mb-4">
-                    <img src="./img/dot-xs.svg" alt="dot1" class="img-fluid">
+                    <div class="line-1"><span></span></div>
                         <span class="px-4">Project Stages</span>
-                    <img src="./img/dot-xs.svg" alt="dot2" class="img-fluid">
+                    <div class="line-2"><span></span></div>
                 </h2>
                 <h4 class="bold--40">Our Services Help You Grow Your Project,
                     Regardless of Which Stage</h4>
@@ -155,9 +155,9 @@
         <div class="container c--custom">
             <div class="popular--title text-center">
                 <h2 class="bold--26 mb-4">
-                    <img src="./img/dot-xs.svg" alt="dot6" class="img-fluid">
+                    <div class="line-1"><span></span></div>
                         <span class="px-4">Popular Platforms</span>
-                    <img src="./img/dot-xs.svg" alt="dot7" class="img-fluid">
+                    <div class="line-2"><span></span></div>
                 </h2>
                 <h4 class="bold--40 mb-4">Most Popular Platforms On Demand,
                     In the Cryptocurrency Industry</h4>
@@ -255,9 +255,9 @@
         <div class="container c--custom">
             <div class="service--title text-center">
                 <h2 class="bold--26 mb-4">
-                    <img src="./img/dot-xs.svg" alt="dot8" class="img-fluid">
+                    <div class="line-1"><span></span></div>
                         <span class="px-4">All Services</span>
-                    <img src="./img/dot-xs.svg" alt="dot9" class="img-fluid">
+                    <div class="line-2"><span></span></div>
                 </h2>
                 <h4 class="bold--40">RankUp Services To Help Your Project Grow</h4>
             </div>
@@ -615,9 +615,9 @@
         <div class="container c--custom">
             <div class="contact--title text-center">
                 <h2 class="bold--26 mb-4">
-                    <img src="./img/dot-xs.svg" alt="dot10" class="img-fluid">
+                    <div class="line-1"><span></span></div>
                         <span class="px-4">Contact Us</span>
-                    <img src="./img/dot-xs.svg" alt="dot11" class="img-fluid">
+                    <div class="line-2"><span></span></div>
                 </h2>
                 <p class="lit--16">Get in touch with us! We never contact you first and our support team is only available via Telegram. Contact ONLY @michaelrankup on Telegram for any questions or inquiries.</p>
             </div>
@@ -686,12 +686,6 @@
 
     <script>
         $(document).ready(function () {
-            //typing animation
-            $('.counter').countUp({
-                'time': 2000,
-                'delay': 10
-            });
-
             //typing animation
             var options = {
                 strings: ["Trending", "Today's Best", "All Time Best"],

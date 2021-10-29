@@ -350,6 +350,7 @@ a, select, input, textarea, button {
   .update .update--text p span {
     width: 40%;
     margin: 0 auto;
+    display: none !important;
   }
 }
 
@@ -450,7 +451,7 @@ a, select, input, textarea, button {
     background-position: 0 50%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 100%;
   }
   100% {
     background-position: 0 50%;
@@ -462,7 +463,7 @@ a, select, input, textarea, button {
     background-position: 0 50%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 100%;
   }
   100% {
     background-position: 0 50%;
@@ -491,7 +492,8 @@ a, select, input, textarea, button {
           transform: translate(-50%, -50%);
 }
 
-.project .project--title h2::before, .project .project--title h2::after {
+.project .project--title h2 .line-1, .project .project--title h2 .line-2 {
+  display: inline;
   position: absolute;
   content: "";
   width: 32rem;
@@ -504,59 +506,69 @@ a, select, input, textarea, button {
 }
 
 @media (max-width: 575.98px) {
-  .project .project--title h2::before, .project .project--title h2::after {
+  .project .project--title h2 .line-1, .project .project--title h2 .line-2 {
     width: 9rem;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .project .project--title h2::before, .project .project--title h2::after {
+  .project .project--title h2 .line-1, .project .project--title h2 .line-2 {
     width: 23rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .project .project--title h2::before, .project .project--title h2::after {
+  .project .project--title h2 .line-1, .project .project--title h2 .line-2 {
     width: 23rem;
   }
 }
 
 @media (max-width: 320px) {
-  .project .project--title h2::before, .project .project--title h2::after {
+  .project .project--title h2 .line-1, .project .project--title h2 .line-2 {
     width: 4.5rem;
   }
 }
 
 @media (min-width: 321px) and (max-width: 376px) {
-  .project .project--title h2::before, .project .project--title h2::after {
+  .project .project--title h2 .line-1, .project .project--title h2 .line-2 {
     width: 6.5rem;
   }
 }
 
 @media (min-width: 355px) and (max-width: 366px) {
-  .project .project--title h2::before, .project .project--title h2::after {
+  .project .project--title h2 .line-1, .project .project--title h2 .line-2 {
     width: 6rem;
   }
 }
 
-.project .project--title h2::before {
+.project .project--title h2 .line-1 span, .project .project--title h2 .line-2 span {
+  position: absolute;
+  top: -0.20rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: var(--color_purple);
+}
+
+.project .project--title h2 .line-1 {
   left: 0;
-  margin-right: .5rem;
   background: -webkit-gradient(linear, left top, right top, from(#ffffff00), to(#9994F0));
   background: linear-gradient(left, #ffffff00 0%, #9994F0 100%);
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#9994f0));
   background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
 }
 
-.project .project--title h2::after {
+.project .project--title h2 .line-1 span {
   right: 0;
-  margin-left: .5rem;
+}
+
+.project .project--title h2 .line-2 {
+  right: 0;
   border: 0;
 }
 
-.project .project--title h2 img {
-  width: .5rem;
-  height: 1rem;
+.project .project--title h2 .line-2 span {
+  left: 0;
 }
 
 .project .project--title h4 {
@@ -817,7 +829,8 @@ a, select, input, textarea, button {
           transform: translate(-50%, -50%);
 }
 
-.popular .popular--title h2::before, .popular .popular--title h2::after {
+.popular .popular--title h2 .line-1, .popular .popular--title h2 .line-2 {
+  display: inline;
   position: absolute;
   content: "";
   width: 30.8rem;
@@ -830,75 +843,85 @@ a, select, input, textarea, button {
 }
 
 @media (max-width: 575.98px) {
-  .popular .popular--title h2::before, .popular .popular--title h2::after {
+  .popular .popular--title h2 .line-1, .popular .popular--title h2 .line-2 {
     width: 7.5rem;
     top: 0.9rem;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .popular .popular--title h2::before, .popular .popular--title h2::after {
+  .popular .popular--title h2 .line-1, .popular .popular--title h2 .line-2 {
     width: 21.5rem;
     top: 0.9rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .popular .popular--title h2::before, .popular .popular--title h2::after {
+  .popular .popular--title h2 .line-1, .popular .popular--title h2 .line-2 {
     width: 22rem;
     top: 0.9rem;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1299.98px) {
-  .popular .popular--title h2::before, .popular .popular--title h2::after {
+  .popular .popular--title h2 .line-1, .popular .popular--title h2 .line-2 {
     width: 30.2rem;
   }
 }
 
 @media (min-width: 1300px) and (max-width: 1531.98px) {
-  .popular .popular--title h2::before, .popular .popular--title h2::after {
+  .popular .popular--title h2 .line-1, .popular .popular--title h2 .line-2 {
     width: 30.2rem;
     top: 0.9rem;
   }
 }
 
 @media (max-width: 320px) {
-  .popular .popular--title h2::before, .popular .popular--title h2::after {
+  .popular .popular--title h2 .line-1, .popular .popular--title h2 .line-2 {
     width: 3rem;
   }
 }
 
 @media (min-width: 321px) and (max-width: 376px) {
-  .popular .popular--title h2::before, .popular .popular--title h2::after {
+  .popular .popular--title h2 .line-1, .popular .popular--title h2 .line-2 {
     width: 5.5rem;
   }
 }
 
 @media (min-width: 355px) and (max-width: 366px) {
-  .popular .popular--title h2::before, .popular .popular--title h2::after {
+  .popular .popular--title h2 .line-1, .popular .popular--title h2 .line-2 {
     width: 5rem;
   }
 }
 
-.popular .popular--title h2::before {
+.popular .popular--title h2 .line-1 span, .popular .popular--title h2 .line-2 span {
+  position: absolute;
+  top: -0.20rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: var(--color_purple);
+}
+
+.popular .popular--title h2 .line-1 {
   left: 0;
-  margin-right: .5rem;
   background: -webkit-gradient(linear, left top, right top, from(#ffffff00), to(#9994F0));
   background: linear-gradient(left, #ffffff00 0%, #9994F0 100%);
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#9994f0));
   background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
 }
 
-.popular .popular--title h2::after {
+.popular .popular--title h2 .line-1 span {
   right: 0;
-  margin-left: .5rem;
+}
+
+.popular .popular--title h2 .line-2 {
+  right: 0;
   border: 0;
 }
 
-.popular .popular--title h2 img {
-  width: .5rem;
-  height: 1rem;
+.popular .popular--title h2 .line-2 span {
+  left: 0;
 }
 
 .popular .popular--title h4 {
@@ -1217,7 +1240,8 @@ a, select, input, textarea, button {
           transform: translate(-50%, -50%);
 }
 
-.service .service--title h2::before, .service .service--title h2::after {
+.service .service--title h2 .line-1, .service .service--title h2 .line-2 {
+  display: inline;
   position: absolute;
   content: "";
   width: 33rem;
@@ -1230,59 +1254,69 @@ a, select, input, textarea, button {
 }
 
 @media (max-width: 575.98px) {
-  .service .service--title h2::before, .service .service--title h2::after {
+  .service .service--title h2 .line-1, .service .service--title h2 .line-2 {
     width: 10rem;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .service .service--title h2::before, .service .service--title h2::after {
+  .service .service--title h2 .line-1, .service .service--title h2 .line-2 {
     width: 24rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .service .service--title h2::before, .service .service--title h2::after {
+  .service .service--title h2 .line-1, .service .service--title h2 .line-2 {
     width: 24rem;
   }
 }
 
 @media (max-width: 320px) {
-  .service .service--title h2::before, .service .service--title h2::after {
+  .service .service--title h2 .line-1, .service .service--title h2 .line-2 {
     width: 5.5rem;
   }
 }
 
 @media (min-width: 321px) and (max-width: 376px) {
-  .service .service--title h2::before, .service .service--title h2::after {
+  .service .service--title h2 .line-1, .service .service--title h2 .line-2 {
     width: 7.5rem;
   }
 }
 
 @media (min-width: 355px) and (max-width: 366px) {
-  .service .service--title h2::before, .service .service--title h2::after {
+  .service .service--title h2 .line-1, .service .service--title h2 .line-2 {
     width: 7rem;
   }
 }
 
-.service .service--title h2::before {
+.service .service--title h2 .line-1 span, .service .service--title h2 .line-2 span {
+  position: absolute;
+  top: -0.20rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: var(--color_purple);
+}
+
+.service .service--title h2 .line-1 {
   left: 0;
-  margin-right: .5rem;
   background: -webkit-gradient(linear, left top, right top, from(#ffffff00), to(#9994F0));
   background: linear-gradient(left, #ffffff00 0%, #9994F0 100%);
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#9994f0));
   background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
 }
 
-.service .service--title h2::after {
+.service .service--title h2 .line-1 span {
   right: 0;
-  margin-left: .5rem;
+}
+
+.service .service--title h2 .line-2 {
+  right: 0;
   border: 0;
 }
 
-.service .service--title h2 img {
-  width: .5rem;
-  height: 1rem;
+.service .service--title h2 .line-2 span {
+  left: 0;
 }
 
 .service .service--title h4 {
@@ -1386,12 +1420,19 @@ a, select, input, textarea, button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #817EC3;
+  background: var(--color_purple);
   padding: 1rem;
   border-top-left-radius: 0.4rem;
   border-bottom-left-radius: 0.4rem;
   width: 4rem;
   height: 4rem;
+}
+
+@media (max-width: 575.98px) {
+  .service .service--table .service--card .card--data .platform .platform--icon {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -1428,7 +1469,7 @@ a, select, input, textarea, button {
 .service .service--table .service--card .card--data .platform .platform--toggle {
   position: absolute;
   right: .5rem;
-  color: #817EC3;
+  color: var(--color_purple);
 }
 
 .service .service--table .service--card .card--data .label {
@@ -1630,8 +1671,8 @@ a, select, input, textarea, button {
 @media (max-width: 575.98px) {
   .service .service--table .service--card .card--data .inserted .headlines {
     width: 50%;
-    background-color: white;
-    color: black;
+    background: var(--color_purple);
+    color: var(--color_white);
     padding: 0.8rem;
   }
 }
@@ -1654,7 +1695,8 @@ a, select, input, textarea, button {
           transform: translate(-50%, -50%);
 }
 
-.contact .contact--title h2::before, .contact .contact--title h2::after {
+.contact .contact--title h2 .line-1, .contact .contact--title h2 .line-2 {
+  display: inline;
   position: absolute;
   content: "";
   width: 33.5rem;
@@ -1667,75 +1709,85 @@ a, select, input, textarea, button {
 }
 
 @media (max-width: 575.98px) {
-  .contact .contact--title h2::before, .contact .contact--title h2::after {
+  .contact .contact--title h2 .line-1, .contact .contact--title h2 .line-2 {
     width: 10rem;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .contact .contact--title h2::before, .contact .contact--title h2::after {
+  .contact .contact--title h2 .line-1, .contact .contact--title h2 .line-2 {
     width: 24.5rem;
     top: .9rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .contact .contact--title h2::before, .contact .contact--title h2::after {
+  .contact .contact--title h2 .line-1, .contact .contact--title h2 .line-2 {
     width: 24.5rem;
     top: .9rem;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1299.98px) {
-  .contact .contact--title h2::before, .contact .contact--title h2::after {
+  .contact .contact--title h2 .line-1, .contact .contact--title h2 .line-2 {
     width: 33rem;
   }
 }
 
 @media (min-width: 1300px) and (max-width: 1531.98px) {
-  .contact .contact--title h2::before, .contact .contact--title h2::after {
+  .contact .contact--title h2 .line-1, .contact .contact--title h2 .line-2 {
     width: 33rem;
     top: .9rem;
   }
 }
 
 @media (max-width: 320px) {
-  .contact .contact--title h2::before, .contact .contact--title h2::after {
+  .contact .contact--title h2 .line-1, .contact .contact--title h2 .line-2 {
     width: 6rem;
     top: .9rem;
   }
 }
 
 @media (min-width: 321px) and (max-width: 376px) {
-  .contact .contact--title h2::before, .contact .contact--title h2::after {
+  .contact .contact--title h2 .line-1, .contact .contact--title h2 .line-2 {
     width: 8rem;
   }
 }
 
 @media (min-width: 355px) and (max-width: 366px) {
-  .contact .contact--title h2::before, .contact .contact--title h2::after {
+  .contact .contact--title h2 .line-1, .contact .contact--title h2 .line-2 {
     width: 7.5rem;
   }
 }
 
-.contact .contact--title h2::before {
+.contact .contact--title h2 .line-1 span, .contact .contact--title h2 .line-2 span {
+  position: absolute;
+  top: -0.20rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: var(--color_purple);
+}
+
+.contact .contact--title h2 .line-1 {
   left: 0;
-  margin-right: .5rem;
   background: -webkit-gradient(linear, left top, right top, from(#ffffff00), to(#9994F0));
   background: linear-gradient(left, #ffffff00 0%, #9994F0 100%);
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#9994f0));
   background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
 }
 
-.contact .contact--title h2::after {
+.contact .contact--title h2 .line-1 span {
   right: 0;
-  margin-left: .5rem;
+}
+
+.contact .contact--title h2 .line-2 {
+  right: 0;
   border: 0;
 }
 
-.contact .contact--title h2 img {
-  width: .5rem;
-  height: 1rem;
+.contact .contact--title h2 .line-2 span {
+  left: 0;
 }
 
 .contact .contact--title p {
@@ -1889,6 +1941,7 @@ a, select, input, textarea, button {
     right: 2.5rem !important;
     width: 3rem;
     height: 3rem;
+    display: none !important;
   }
 }
 
@@ -1926,7 +1979,8 @@ a, select, input, textarea, button {
           transform: translate(-50%, -50%);
 }
 
-.page .page--title h2::before, .page .page--title h2::after {
+.page .page--title h2 .line-1, .page .page--title h2 .line-2 {
+  display: inline;
   position: absolute;
   content: "";
   width: 32rem;
@@ -1939,59 +1993,69 @@ a, select, input, textarea, button {
 }
 
 @media (max-width: 575.98px) {
-  .page .page--title h2::before, .page .page--title h2::after {
+  .page .page--title h2 .line-1, .page .page--title h2 .line-2 {
     width: 9rem;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .page .page--title h2::before, .page .page--title h2::after {
+  .page .page--title h2 .line-1, .page .page--title h2 .line-2 {
     width: 23rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .page .page--title h2::before, .page .page--title h2::after {
+  .page .page--title h2 .line-1, .page .page--title h2 .line-2 {
     width: 23rem;
   }
 }
 
 @media (max-width: 320px) {
-  .page .page--title h2::before, .page .page--title h2::after {
+  .page .page--title h2 .line-1, .page .page--title h2 .line-2 {
     width: 4.5rem;
   }
 }
 
 @media (min-width: 321px) and (max-width: 376px) {
-  .page .page--title h2::before, .page .page--title h2::after {
+  .page .page--title h2 .line-1, .page .page--title h2 .line-2 {
     width: 6.5rem;
   }
 }
 
 @media (min-width: 355px) and (max-width: 366px) {
-  .page .page--title h2::before, .page .page--title h2::after {
+  .page .page--title h2 .line-1, .page .page--title h2 .line-2 {
     width: 6rem;
   }
 }
 
-.page .page--title h2::before {
+.page .page--title h2 .line-1 span, .page .page--title h2 .line-2 span {
+  position: absolute;
+  top: -0.20rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: var(--color_purple);
+}
+
+.page .page--title h2 .line-1 {
   left: 0;
-  margin-right: .5rem;
   background: -webkit-gradient(linear, left top, right top, from(#ffffff00), to(#9994F0));
   background: linear-gradient(left, #ffffff00 0%, #9994F0 100%);
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#9994f0));
   background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
 }
 
-.page .page--title h2::after {
+.page .page--title h2 .line-1 span {
   right: 0;
-  margin-left: .5rem;
+}
+
+.page .page--title h2 .line-2 {
+  right: 0;
   border: 0;
 }
 
-.page .page--title h2 img {
-  width: .5rem;
-  height: 1rem;
+.page .page--title h2 .line-2 span {
+  left: 0;
 }
 
 .page .page--top {
@@ -2089,7 +2153,8 @@ a, select, input, textarea, button {
           transform: translate(-50%, -50%);
 }
 
-.pricing .pricing--title h2::before, .pricing .pricing--title h2::after {
+.pricing .pricing--title h2 .line-1, .pricing .pricing--title h2 .line-2 {
+  display: inline;
   position: absolute;
   content: "";
   width: 31.5rem;
@@ -2102,295 +2167,303 @@ a, select, input, textarea, button {
 }
 
 @media (max-width: 575.98px) {
-  .pricing .pricing--title h2::before, .pricing .pricing--title h2::after {
+  .pricing .pricing--title h2 .line-1, .pricing .pricing--title h2 .line-2 {
     width: 8.5rem;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .pricing .pricing--title h2::before, .pricing .pricing--title h2::after {
+  .pricing .pricing--title h2 .line-1, .pricing .pricing--title h2 .line-2 {
     width: 22.5rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .pricing .pricing--title h2::before, .pricing .pricing--title h2::after {
+  .pricing .pricing--title h2 .line-1, .pricing .pricing--title h2 .line-2 {
     width: 22.5rem;
   }
 }
 
 @media (max-width: 320px) {
-  .pricing .pricing--title h2::before, .pricing .pricing--title h2::after {
+  .pricing .pricing--title h2 .line-1, .pricing .pricing--title h2 .line-2 {
     width: 4rem;
   }
 }
 
 @media (min-width: 321px) and (max-width: 376px) {
-  .pricing .pricing--title h2::before, .pricing .pricing--title h2::after {
+  .pricing .pricing--title h2 .line-1, .pricing .pricing--title h2 .line-2 {
     width: 6.5rem;
   }
 }
 
 @media (min-width: 355px) and (max-width: 366px) {
-  .pricing .pricing--title h2::before, .pricing .pricing--title h2::after {
+  .pricing .pricing--title h2 .line-1, .pricing .pricing--title h2 .line-2 {
     width: 5.8rem;
   }
 }
 
-.pricing .pricing--title h2::before {
+.pricing .pricing--title h2 .line-1 span, .pricing .pricing--title h2 .line-2 span {
+  position: absolute;
+  top: -0.20rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: var(--color_purple);
+}
+
+.pricing .pricing--title h2 .line-1 {
   left: 0;
-  margin-right: .5rem;
   background: -webkit-gradient(linear, left top, right top, from(#ffffff00), to(#9994F0));
   background: linear-gradient(left, #ffffff00 0%, #9994F0 100%);
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#9994f0));
   background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, #9994f0 100%);
 }
 
-.pricing .pricing--title h2::after {
+.pricing .pricing--title h2 .line-1 span {
   right: 0;
-  margin-left: .5rem;
+}
+
+.pricing .pricing--title h2 .line-2 {
+  right: 0;
   border: 0;
 }
 
-.pricing .pricing--title h2 img {
-  position: relative;
-  bottom: .9rem;
-  width: .5rem;
-  height: 1rem;
+.pricing .pricing--title h2 .line-2 span {
+  left: 0;
 }
 
-.pricing .pricing--title .reddit::before, .pricing .pricing--title .reddit::after {
+.pricing .pricing--title .reddit .line-1, .pricing .pricing--title .reddit .line-2 {
   width: 35rem;
 }
 
 @media (max-width: 575.98px) {
-  .pricing .pricing--title .reddit::before, .pricing .pricing--title .reddit::after {
+  .pricing .pricing--title .reddit .line-1, .pricing .pricing--title .reddit .line-2 {
     width: 12rem;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .pricing .pricing--title .reddit::before, .pricing .pricing--title .reddit::after {
+  .pricing .pricing--title .reddit .line-1, .pricing .pricing--title .reddit .line-2 {
     width: 26rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .pricing .pricing--title .reddit::before, .pricing .pricing--title .reddit::after {
+  .pricing .pricing--title .reddit .line-1, .pricing .pricing--title .reddit .line-2 {
     width: 26rem;
   }
 }
 
 @media (max-width: 320px) {
-  .pricing .pricing--title .reddit::before, .pricing .pricing--title .reddit::after {
+  .pricing .pricing--title .reddit .line-1, .pricing .pricing--title .reddit .line-2 {
     width: 7.5rem;
   }
 }
 
 @media (min-width: 321px) and (max-width: 376px) {
-  .pricing .pricing--title .reddit::before, .pricing .pricing--title .reddit::after {
+  .pricing .pricing--title .reddit .line-1, .pricing .pricing--title .reddit .line-2 {
     width: 10rem;
   }
 }
 
 @media (min-width: 355px) and (max-width: 366px) {
-  .pricing .pricing--title .reddit::before, .pricing .pricing--title .reddit::after {
+  .pricing .pricing--title .reddit .line-1, .pricing .pricing--title .reddit .line-2 {
     width: 9.4rem;
   }
 }
 
-.pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+.pricing .pricing--title .poocoin .line-1, .pricing .pricing--title .poocoin .line-2 {
   width: 34.5rem;
 }
 
 @media (max-width: 575.98px) {
-  .pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+  .pricing .pricing--title .poocoin .line-1, .pricing .pricing--title .poocoin .line-2 {
     width: 11rem;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+  .pricing .pricing--title .poocoin .line-1, .pricing .pricing--title .poocoin .line-2 {
     width: 25.5rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+  .pricing .pricing--title .poocoin .line-1, .pricing .pricing--title .poocoin .line-2 {
     width: 25.5rem;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1299.98px) {
-  .pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+  .pricing .pricing--title .poocoin .line-1, .pricing .pricing--title .poocoin .line-2 {
     width: 34rem;
   }
 }
 
 @media (min-width: 1300px) and (max-width: 1531.98px) {
-  .pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+  .pricing .pricing--title .poocoin .line-1, .pricing .pricing--title .poocoin .line-2 {
     width: 34rem;
   }
 }
 
 @media (max-width: 320px) {
-  .pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+  .pricing .pricing--title .poocoin .line-1, .pricing .pricing--title .poocoin .line-2 {
     width: 7rem;
   }
 }
 
 @media (min-width: 321px) and (max-width: 376px) {
-  .pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+  .pricing .pricing--title .poocoin .line-1, .pricing .pricing--title .poocoin .line-2 {
     width: 9rem;
   }
 }
 
 @media (min-width: 355px) and (max-width: 366px) {
-  .pricing .pricing--title .poocoin::before, .pricing .pricing--title .poocoin::after {
+  .pricing .pricing--title .poocoin .line-1, .pricing .pricing--title .poocoin .line-2 {
     width: 8.5rem;
   }
 }
 
-.pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+.pricing .pricing--title .coinsniper .line-1, .pricing .pricing--title .coinsniper .line-2 {
   width: 33.5rem;
 }
 
 @media (max-width: 575.98px) {
-  .pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+  .pricing .pricing--title .coinsniper .line-1, .pricing .pricing--title .coinsniper .line-2 {
     width: 10rem;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+  .pricing .pricing--title .coinsniper .line-1, .pricing .pricing--title .coinsniper .line-2 {
     width: 24.5rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+  .pricing .pricing--title .coinsniper .line-1, .pricing .pricing--title .coinsniper .line-2 {
     width: 24.5rem;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1299.98px) {
-  .pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+  .pricing .pricing--title .coinsniper .line-1, .pricing .pricing--title .coinsniper .line-2 {
     width: 33rem;
   }
 }
 
 @media (min-width: 1300px) and (max-width: 1531.98px) {
-  .pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+  .pricing .pricing--title .coinsniper .line-1, .pricing .pricing--title .coinsniper .line-2 {
     width: 33rem;
   }
 }
 
 @media (max-width: 320px) {
-  .pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+  .pricing .pricing--title .coinsniper .line-1, .pricing .pricing--title .coinsniper .line-2 {
     width: 6rem;
   }
 }
 
 @media (min-width: 321px) and (max-width: 376px) {
-  .pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+  .pricing .pricing--title .coinsniper .line-1, .pricing .pricing--title .coinsniper .line-2 {
     width: 8rem;
   }
 }
 
 @media (min-width: 355px) and (max-width: 366px) {
-  .pricing .pricing--title .coinsniper::before, .pricing .pricing--title .coinsniper::after {
+  .pricing .pricing--title .coinsniper .line-1, .pricing .pricing--title .coinsniper .line-2 {
     width: 7.5rem;
   }
 }
 
-.pricing .pricing--title .coinhunt::before, .pricing .pricing--title .coinhunt::after {
+.pricing .pricing--title .coinhunt .line-1, .pricing .pricing--title .coinhunt .line-2 {
   width: 34rem;
 }
 
 @media (max-width: 575.98px) {
-  .pricing .pricing--title .coinhunt::before, .pricing .pricing--title .coinhunt::after {
+  .pricing .pricing--title .coinhunt .line-1, .pricing .pricing--title .coinhunt .line-2 {
     width: 11rem;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .pricing .pricing--title .coinhunt::before, .pricing .pricing--title .coinhunt::after {
+  .pricing .pricing--title .coinhunt .line-1, .pricing .pricing--title .coinhunt .line-2 {
     width: 25rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .pricing .pricing--title .coinhunt::before, .pricing .pricing--title .coinhunt::after {
+  .pricing .pricing--title .coinhunt .line-1, .pricing .pricing--title .coinhunt .line-2 {
     width: 25rem;
   }
 }
 
 @media (max-width: 320px) {
-  .pricing .pricing--title .coinhunt::before, .pricing .pricing--title .coinhunt::after {
+  .pricing .pricing--title .coinhunt .line-1, .pricing .pricing--title .coinhunt .line-2 {
     width: 6.5rem;
   }
 }
 
 @media (min-width: 321px) and (max-width: 376px) {
-  .pricing .pricing--title .coinhunt::before, .pricing .pricing--title .coinhunt::after {
+  .pricing .pricing--title .coinhunt .line-1, .pricing .pricing--title .coinhunt .line-2 {
     width: 8.5rem;
   }
 }
 
 @media (min-width: 355px) and (max-width: 366px) {
-  .pricing .pricing--title .coinhunt::before, .pricing .pricing--title .coinhunt::after {
+  .pricing .pricing--title .coinhunt .line-1, .pricing .pricing--title .coinhunt .line-2 {
     width: 8rem;
   }
 }
 
-.pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+.pricing .pricing--title .dxsale .line-1, .pricing .pricing--title .dxsale .line-2 {
   width: 35rem;
 }
 
 @media (max-width: 575.98px) {
-  .pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+  .pricing .pricing--title .dxsale .line-1, .pricing .pricing--title .dxsale .line-2 {
     width: 11.5rem;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+  .pricing .pricing--title .dxsale .line-1, .pricing .pricing--title .dxsale .line-2 {
     width: 26rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+  .pricing .pricing--title .dxsale .line-1, .pricing .pricing--title .dxsale .line-2 {
     width: 26rem;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1299.98px) {
-  .pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+  .pricing .pricing--title .dxsale .line-1, .pricing .pricing--title .dxsale .line-2 {
     width: 34.5rem;
   }
 }
 
 @media (min-width: 1300px) and (max-width: 1531.98px) {
-  .pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+  .pricing .pricing--title .dxsale .line-1, .pricing .pricing--title .dxsale .line-2 {
     width: 34.5rem;
   }
 }
 
 @media (max-width: 320px) {
-  .pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+  .pricing .pricing--title .dxsale .line-1, .pricing .pricing--title .dxsale .line-2 {
     width: 7.5rem;
   }
 }
 
 @media (min-width: 321px) and (max-width: 376px) {
-  .pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+  .pricing .pricing--title .dxsale .line-1, .pricing .pricing--title .dxsale .line-2 {
     width: 9.5rem;
   }
 }
 
 @media (min-width: 355px) and (max-width: 366px) {
-  .pricing .pricing--title .dxsale::before, .pricing .pricing--title .dxsale::after {
+  .pricing .pricing--title .dxsale .line-1, .pricing .pricing--title .dxsale .line-2 {
     width: 9rem;
   }
 }
@@ -2437,7 +2510,7 @@ a, select, input, textarea, button {
 
 @media (max-width: 575.98px) {
   .pricing .pricing--cards .nav-pills .nav-item .active {
-    border-radius: 1.875rem !important;
+    border-radius: 0;
   }
 }
 

@@ -34,6 +34,12 @@ $(window).scroll(function () {
 
 
 $(document).ready(function () {
+    //counter animation
+    $('.counter').countUp({
+        'time': 2000,
+        'delay': 10
+    });
+    
     /********* go back to top ********/
     $('#backToTop').gotop();
 

@@ -253,7 +253,7 @@ a, select, input, textarea, button {
 /* hero starts */
 .hero {
   margin-top: 6rem;
-  background-image: url(../img/bg.png);
+  background-image: url(../img/bg.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -543,9 +543,9 @@ a, select, input, textarea, button {
 
 .project .project--title h2 .line-1 span, .project .project--title h2 .line-2 span {
   position: absolute;
-  top: -0.20rem;
-  width: 0.6rem;
-  height: 0.6rem;
+  top: -0.15rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   background-color: var(--color_purple);
 }
@@ -896,9 +896,9 @@ a, select, input, textarea, button {
 
 .popular .popular--title h2 .line-1 span, .popular .popular--title h2 .line-2 span {
   position: absolute;
-  top: -0.20rem;
-  width: 0.6rem;
-  height: 0.6rem;
+  top: -0.15rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   background-color: var(--color_purple);
 }
@@ -1291,9 +1291,9 @@ a, select, input, textarea, button {
 
 .service .service--title h2 .line-1 span, .service .service--title h2 .line-2 span {
   position: absolute;
-  top: -0.20rem;
-  width: 0.6rem;
-  height: 0.6rem;
+  top: -0.15rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   background-color: var(--color_purple);
 }
@@ -1762,9 +1762,9 @@ a, select, input, textarea, button {
 
 .contact .contact--title h2 .line-1 span, .contact .contact--title h2 .line-2 span {
   position: absolute;
-  top: -0.20rem;
-  width: 0.6rem;
-  height: 0.6rem;
+  top: -0.15rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   background-color: var(--color_purple);
 }
@@ -2030,9 +2030,9 @@ a, select, input, textarea, button {
 
 .page .page--title h2 .line-1 span, .page .page--title h2 .line-2 span {
   position: absolute;
-  top: -0.20rem;
-  width: 0.6rem;
-  height: 0.6rem;
+  top: -0.15rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   background-color: var(--color_purple);
 }
@@ -2204,9 +2204,9 @@ a, select, input, textarea, button {
 
 .pricing .pricing--title h2 .line-1 span, .pricing .pricing--title h2 .line-2 span {
   position: absolute;
-  top: -0.20rem;
-  width: 0.6rem;
-  height: 0.6rem;
+  top: -0.15rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   background-color: var(--color_purple);
 }

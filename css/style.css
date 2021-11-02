@@ -244,8 +244,8 @@ a, select, input, textarea, button {
 
 .stick {
   position: fixed;
+  padding: 0.5rem 0 !important;
   top: 0;
-  padding: .5rem 0 !important;
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;
 }
@@ -476,12 +476,12 @@ a, select, input, textarea, button {
 }
 
 /* project starts */
-.project .c--custom--2 {
-  max-width: 88rem;
+.project {
+  padding: 10rem 0 3rem 0;
 }
 
-.project .project--title {
-  margin: 15rem 0 3rem 0;
+.project .c--custom--2 {
+  max-width: 88rem;
 }
 
 .project .project--title h2 {
@@ -813,12 +813,12 @@ a, select, input, textarea, button {
 }
 
 /* popular starts */
-.popular .c--custom--3 {
-  max-width: 95rem;
+.popular {
+  padding: 10rem 0 3rem 0;
 }
 
-.popular .popular--title {
-  margin: 10rem 0 3rem 0;
+.popular .c--custom--3 {
+  max-width: 95rem;
 }
 
 .popular .popular--title h2 {
@@ -1221,7 +1221,7 @@ a, select, input, textarea, button {
 
 /* service starts */
 .service {
-  margin-bottom: 10rem;
+  padding: 10rem 0 10rem 0;
 }
 
 .service .c--custom--2 {
@@ -1229,7 +1229,7 @@ a, select, input, textarea, button {
 }
 
 .service .service--title {
-  margin: 15rem 0 6rem 0;
+  margin-bottom: 6rem;
 }
 
 .service .service--title h2 {
@@ -1488,8 +1488,9 @@ a, select, input, textarea, button {
 }
 
 .service .service--table .service--card .card--data .label p {
-  background: var(--color_black);
-  padding: 0 .5rem;
+  background: #201E49;
+  padding: .2rem .5rem;
+  border-radius: 0.3rem;
   text-transform: uppercase;
 }
 
@@ -2064,7 +2065,7 @@ a, select, input, textarea, button {
 
 .page .page--top .banner {
   border: 0.3125rem solid var(--color_purple);
-  border-radius: 1.875rem;
+  border-radius: 2.2rem;
 }
 
 @media (max-width: 575.98px) {
